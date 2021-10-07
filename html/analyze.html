@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script src="https://prakt.chemie.unibas.ch/~devereux/ngl-master/dist/ngl.js"></script>
+<!--  <script src="https://unpkg.com/ngl"></script>-->
+  <script>
+    var c1=0;
+    var c2=4;
+    var cubes=['ref/naphta.pot.cube','1-mtpfit/ditriantapole_expansion.cube','6-analysis/charge-fit/monopole_expansion.cube','6-analysis/quad-fit/quadrupole_expansion.cube','6-analysis/48-charges/48charges.cube','1-mtpfit/error.cube','6-analysis/charge-fit/error.cube','6-analysis/quad-fit/error.cube','6-analysis/48-charges/error.cube'];
+    var maxESP=[0.0250395,0.0250395,0.0250395,0.0250395,0.0250395,0.005557912416267943,0.016687448389154706,0.005420000446570973,0.006708846848484849];
+
+    var densFile = 'http://localhost:8000/ref/naphta.dens.cube';
+    var espFile = '';
+    
+    document.addEventListener("DOMContentLoaded", function () {
+        loadCube1(0);
+        loadCube2(4);
+    } );
+    
+    function loadCube1(c1){
+      espFile = 'http://localhost:8000/'+cubes[c1];
+      document.getElementById("viewport").innerHTML = "";
+      document.getElementById("caption").innerHTML = '<p>'+cubes[c1]+'<br>range: red -'+(maxESP[c1]*627).toFixed(2)+
+          ' to blue '+(maxESP[c1]*627).toFixed(2)+' kcal/mol</p>';
+      var stage = new NGL.Stage("viewport");
+
+      Promise.all([
+        stage.loadFile(densFile),
+        stage.loadFile(espFile)
+      ]).then(function(comp) {
+        var densComp = comp[0]
+        var espComp = comp[1]
+
+
+        densComp.addRepresentation("surface",{isolevel: "  0.0010",
+                                              isolevelType: 'value',
+                                              opacity: 0.95,
+                                              side: 'front',
+                                              colorScheme: 'volume',
+                                              colorVolume: espComp.volume,
+                                              colorScale: [ 0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff ],
+                                              colorMode: 'rgb',
+                                              colorDomain: [ -maxESP[c1], maxESP[c1] ]
+                                              });
+        stage.autoView();
+        stage.viewerControls.zoom(-0.5);
+      } );
+    };
+
+    var densFile2 = 'http://localhost:8000/ref/naphta.dens.cube';
+    var espFile2= '';
+
+    function loadCube2(c2){
+      document.getElementById("viewport2").innerHTML = "";
+      document.getElementById("caption2").innerHTML = '<p>'+cubes[c1]+'<br>range: red -'+(maxESP[c2]*627).toFixed(2)+
+          ' to blue '+(maxESP[c2]*627).toFixed(2)+' kcal/mol</p>';
+      var stage2 = new NGL.Stage("viewport2");
+      espFile2 = 'http://localhost:8000/'+cubes[c2];
+
+      Promise.all([
+        stage2.loadFile(densFile2),
+        stage2.loadFile(espFile2)
+      ]).then(function(comp2) {
+        var densComp2 = comp2[0]
+        var espComp2 = comp2[1]
+
+
+        densComp2.addRepresentation("surface",{isolevel: "  0.0010",
+                                              isolevelType: 'value',
+                                              opacity: 0.95,
+                                              side: 'front',
+                                              colorScheme: 'volume',
+                                              colorVolume: espComp2.volume,
+                                              colorScale: [ 0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff ],
+                                              colorMode: 'rgb',
+                                              colorDomain: [ -maxESP[c2], maxESP[c2] ]
+                                              });
+        stage2.autoView();
+        stage2.viewerControls.zoom(-0.5);
+      } );
+    };
+  </script>
+  <h3>NGL Cube File Visualization</h3>
+  <table><tr><td><h3>Left Pane</h3></td><td><h3>Right Pane</h3></td></tr><tr><td>
+      <input type="radio" id="cube1_0" name="cubeF1" value="0" onclick="loadCube1(0);"checked="checked">
+    <label for="cube1_0">ref/naphta.pot.cube</label><br>
+    <input type="radio" id="cube1_1" name="cubeF1" value="1" onclick="loadCube1(1);">
+    <label for="cube1_1">1-mtpfit/ditriantapole_expansion.cube</label><br>
+    <input type="radio" id="cube1_2" name="cubeF1" value="2" onclick="loadCube1(2);">
+    <label for="cube1_2">6-analysis/charge-fit/monopole_expansion.cube</label><br>
+    <input type="radio" id="cube1_3" name="cubeF1" value="3" onclick="loadCube1(3);">
+    <label for="cube1_3">6-analysis/quad-fit/quadrupole_expansion.cube</label><br>
+    <input type="radio" id="cube1_4" name="cubeF1" value="4" onclick="loadCube1(4);">
+    <label for="cube1_4">6-analysis/48-charges/48charges.cube</label><br>
+    <input type="radio" id="cube1_5" name="cubeF1" value="5" onclick="loadCube1(5);">
+    <label for="cube1_5">1-mtpfit/error.cube</label><br>
+    <input type="radio" id="cube1_6" name="cubeF1" value="6" onclick="loadCube1(6);">
+    <label for="cube1_6">6-analysis/charge-fit/error.cube</label><br>
+    <input type="radio" id="cube1_7" name="cubeF1" value="7" onclick="loadCube1(7);">
+    <label for="cube1_7">6-analysis/quad-fit/error.cube</label><br>
+    <input type="radio" id="cube1_8" name="cubeF1" value="8" onclick="loadCube1(8);">
+    <label for="cube1_8">6-analysis/48-charges/error.cube</label><br>
+
+    </td><td>
+    <input type="radio" id="cube2_0" name="cubeF2" value="0" onclick="loadCube2(0);">
+    <label for="cube2_0">ref/naphta.pot.cube</label><br>
+    <input type="radio" id="cube2_1" name="cubeF2" value="1" onclick="loadCube2(1);">
+    <label for="cube2_1">1-mtpfit/ditriantapole_expansion.cube</label><br>
+    <input type="radio" id="cube2_2" name="cubeF2" value="2" onclick="loadCube2(2);">
+    <label for="cube2_2">6-analysis/charge-fit/monopole_expansion.cube</label><br>
+    <input type="radio" id="cube2_3" name="cubeF2" value="3" onclick="loadCube2(3);">
+    <label for="cube2_3">6-analysis/quad-fit/quadrupole_expansion.cube</label><br>
+    <input type="radio" id="cube2_4" name="cubeF2" value="4" onclick="loadCube2(4);"checked="checked">
+    <label for="cube2_4">6-analysis/48-charges/48charges.cube</label><br>
+    <input type="radio" id="cube2_5" name="cubeF2" value="5" onclick="loadCube2(5);">
+    <label for="cube2_5">1-mtpfit/error.cube</label><br>
+    <input type="radio" id="cube2_6" name="cubeF2" value="6" onclick="loadCube2(6);">
+    <label for="cube2_6">6-analysis/charge-fit/error.cube</label><br>
+    <input type="radio" id="cube2_7" name="cubeF2" value="7" onclick="loadCube2(7);">
+    <label for="cube2_7">6-analysis/quad-fit/error.cube</label><br>
+    <input type="radio" id="cube2_8" name="cubeF2" value="8" onclick="loadCube2(8);">
+    <label for="cube2_8">6-analysis/48-charges/error.cube</label><br>
+
+  </td></tr></table>
+  <table><tr><td>
+  <div id="viewport" style="width:500px; height:500px;"></div><div id="caption"></div>
+  </td><td>
+  <div id="viewport2" style="width:500px; height:500px;"></div><div id="caption2"></div>
+  </td></tr></table>
+  <h3>Fitted MDCM Performance Compared to Reference ESP:</h3>
+  <table cellpadding="5">
+  <tr><td><b>Measure</b></td><td><b>RMSE[kcal/mol/e]</b></td><td><b>MaxError[kcal/mol/e]</b></td><td><b>NPoints</b></td></tr>
+  <tr><td><b>Total                        </b></td><td>  0.219</td><td>  4.206</td><td>2472959</td></tr>
+  <tr><td><b>Close  (  1.20 < r <   1.66 )</b></td><td>  0.838</td><td>  4.206</td><td>150371</td></tr>
+  <tr><td><b>Mid-range ( 1.66 < r <  2.20)</b></td><td>  0.164</td><td>  0.881</td><td>270645</td></tr>
+  <tr><td><b>Far-range ( 2.20 < r        )</b></td><td>  0.051</td><td>  0.266</td><td>2051943</td></tr>
+  </table>
+  <h3>Fitted Quadrupole Model Performance (for comparison):</h3>
+  <table cellpadding="5">
+  <tr><td><b>Measure</b></td><td><b>RMSE[kcal/mol/e]</b></td><td><b>MaxError[kcal/mol/e]</b></td><td><b>NPoints</b></td></tr>
+  <tr><td><b>Total                        </b></td><td>  0.229</td><td>  3.398</td><td>2472959</td></tr>
+  <tr><td><b>Close  (  1.20 < r <   1.66 )</b></td><td>  0.813</td><td>  3.398</td><td>150371</td></tr>
+  <tr><td><b>Mid-range ( 1.66 < r <  2.20)</b></td><td>  0.248</td><td>  0.709</td><td>270645</td></tr>
+  <tr><td><b>Far-range ( 2.20 < r        )</b></td><td>  0.080</td><td>  0.370</td><td>2051943</td></tr>
+  </table>
+  <h3>Fitted Central-Charge Model Performance (for comparison):</h3>
+  <table cellpadding="5">
+  <tr><td><b>Measure</b></td><td><b>RMSE[kcal/mol/e]</b></td><td><b>MaxError[kcal/mol/e]</b></td><td><b>NPoints</b></td></tr>
+  <tr><td><b>Total                        </b></td><td>  0.334</td><td> 10.463</td><td>2472959</td></tr>
+  <tr><td><b>Close  (  1.20 < r <   1.66 )</b></td><td>  1.184</td><td> 10.463</td><td>150371</td></tr>
+  <tr><td><b>Mid-range ( 1.66 < r <  2.20)</b></td><td>  0.376</td><td>  1.402</td><td>270645</td></tr>
+  <tr><td><b>Far-range ( 2.20 < r        )</b></td><td>  0.115</td><td>  0.508</td><td>2051943</td></tr>
+  </table>
+  <h2><br>ESP Slice Data (ESP and Errors in each plane)<br></h2>
+  <img src="http://localhost:8000/6-analysis/48-charges//comparison.png" alt="Slice Data" style="width:1020px;">
+</body>
+</html>

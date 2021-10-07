@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script src="https://prakt.chemie.unibas.ch/~devereux/ngl-master/dist/ngl.js"></script>
+<!--  <script src="https://unpkg.com/ngl"></script>-->
+  <script>
+    var pdbFile = 'http://localhost:8000/ref/mol.pdb' 
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("viewport");
+
+      Promise.all([
+        stage.loadFile(pdbFile),
+      ]).then(function(comp) {
+        var densComp = comp[0]
+
+
+        densComp.addRepresentation("ball+stick");
+        densComp.addRepresentation("label",{labelType: "atomname",
+                                            color: "cyan"});
+        stage.autoView();
+      } );
+    });
+
+  </script>
+  <h3>NGL Cube File Visualization</h3>
+  <div id="viewport" style="width:600px; height:600px;"></div>
+  <p><div id="viewer"></div></p>
+  <script>
+    document.getElementById("viewer").innerHTML = pdbFile;
+  </script>
+</body>
+</html>

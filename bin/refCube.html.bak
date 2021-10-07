@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script src="file:///home/devereux/work/pydcm/ngl-master/dist/ngl.js"></script>
+<!--  <script src="https://unpkg.com/ngl"></script>-->
+  <script>
+    var densFile = 'http://localhost:8000/naphta.dens.cube' 
+    var espFile = 'http://localhost:8000/naphta.pot.cube'
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var stage = new NGL.Stage("viewport");
+
+      Promise.all([
+        stage.loadFile(densFile),
+        stage.loadFile(espFile)
+      ]).then(function(comp) {
+        var densComp = comp[0]
+        var espComp = comp[1]
+
+
+        densComp.addRepresentation("surface",{isolevel: "0.001",
+                                              isolevelType: 'value',
+                                              opacity: 0.95,
+                                              side: 'front',
+                                              colorScheme: 'volume',
+                                              colorVolume: espComp.volume,
+                                              colorScale: [ 0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff ],
+                                              colorMode: 'rgb',
+                                              colorDomain: [ -0.03, 0.03 ]
+                                              });
+        stage.autoView();
+        stage.viewerControls.zoom(-0.5);
+      } );
+    });
+
+  </script>
+  <h3>NGL Cube File Visualization</h3>
+  <div id="viewport" style="width:800px; height:800px;"></div>
+  <p><div id="viewer"></div></p>
+  <script>
+    document.getElementById("viewer").innerHTML = densFile;
+  </script>
+</body>
+</html>

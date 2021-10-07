@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script src="https://prakt.chemie.unibas.ch/~devereux/ngl-master/dist/ngl.js"></script>
+<!--  <script src="https://unpkg.com/ngl"></script>-->
+  <script>
+    var xyzFile = 'http://localhost:8000/3-fragfit/frag1/fit1/frag1_fit1_6chgs.pdb' 
+    var pdbFile = 'http://localhost:8000/ref/mol.pdb'
+  </script>
+  <h3>NGL Visualization of Fragment Charge Models</h3>
+  <h4>Fragments:</h4>
+  <p>frag1 atoms: 1 2 11 12 <br>frag2 atoms: 5 8 14 16 <br>frag3 atoms: 4 7 13 15 <br>frag4 atoms: 9 10 17 18 <br>frag5 atoms: 3 6 <br></p>
+  <table><tr><td>Fragment ID</td><td>
+  <input type="number" id="fragID" min="1" max="5" step="1" value="1" onkeydown="return false" 
+  onmouseup="setLimits(); loadXYZ()"></td></tr>
+  <tr><td>Fit number</td><td>
+  <input type="number" id="fitID" min="1" max="2" step="1" value="1" onkeydown="return false" 
+  onmouseup="loadXYZ()"></td></tr>
+  <tr><td>No. of charges</td><td>
+  <input type="number" id="nChg" min="6" max="14" step="1" value="6" onkeydown="return false" 
+  onmouseup="loadXYZ()"></td></tr>
+  </table>
+  <br>
+
+  <table><tr><td>
+  <p><div id="viewer"></div></p>
+  </td></tr><tr><td>
+  <div id="viewport" style="width:800px; height:800px;"></div>
+  </td></tr></table>
+  <script>
+      var minChgs=[6,6,6,6,3];
+      var maxChgs=[14,14,14,14,8];
+      var rmse_0_0=[0.2465425619,0.2379778192,0.1777118007,0.2126664339,0.1588320357,0.1051764633,0.08892966012,0.0771408336,0.08154634588];
+      var rmse_0_1=[0.3015960332,0.233056349,0.1850011953,0.2145670443,0.1171135589,0.1069166938,0.09385536401,0.09628012723,0.08013541502];
+      var rmse_0=[];
+      rmse_0.push(rmse_0_0);
+      rmse_0.push(rmse_0_1);
+      var rmse_1_0=[0.330107438,0.321587564,0.2318209396,0.1972359629,0.215947789,0.1746586214,0.121017038,0.1284241473,0.1279361536];
+      var rmse_1_1=[0.2933476328,0.2489503879,0.2275345626,0.2010430702,0.1783553721,0.1698939037,0.1108645275,0.1341002225,0.107140213];
+      var rmse_1=[];
+      rmse_1.push(rmse_1_0);
+      rmse_1.push(rmse_1_1);
+      var rmse_2_0=[0.3312308516,0.2850765058,0.1799670264,0.1944589932,0.2336222614,0.1755737073,0.1561424088,0.1015345285,0.1274788625];
+      var rmse_2_1=[0.3494490549,0.2589419542,0.2230775381,0.2355986155,0.1768210245,0.1860555787,0.1394921661,0.1344038772,0.1113154914];
+      var rmse_2=[];
+      rmse_2.push(rmse_2_0);
+      rmse_2.push(rmse_2_1);
+      var rmse_3_0=[0.3819760776,0.2911825191,0.2053592472,0.1788154443,0.136443489,0.121988307,0.0924985156,0.106927987,0.06618475971];
+      var rmse_3_1=[0.3481525153,0.1915096881,0.172550532,0.1972180528,0.1771190033,0.1052226374,0.08186954306,0.08323622337,0.07875689803];
+      var rmse_3=[];
+      rmse_3.push(rmse_3_0);
+      rmse_3.push(rmse_3_1);
+      var rmse_4_0=[0.4447745262,0.3667347658,0.3059649153,0.09683719139,0.08793550118,0.07527466899];
+      var rmse_4_1=[0.5706929667,0.4575381901,0.3046272315,0.09726137704,0.08671502828,0.07298013619];
+      var rmse_4=[];
+      rmse_4.push(rmse_4_0);
+      rmse_4.push(rmse_4_1);
+var rmse=[];      rmse.push(rmse_0);
+      rmse.push(rmse_1);
+      rmse.push(rmse_2);
+      rmse.push(rmse_3);
+      rmse.push(rmse_4);
+
+    document.addEventListener("DOMContentLoaded", function () {
+        loadXYZ();
+    } );
+    function setLimits() {
+        var input = document.getElementById("nChg");
+        var frag = document.getElementById("fragID").value;
+        input.setAttribute("max",maxChgs[frag-1]);
+        input.setAttribute("min",minChgs[frag-1]); 
+        input.value=minChgs[frag-1]
+    }
+    function loadXYZ() {
+      var frag = document.getElementById("fragID").value;
+      var fit = document.getElementById("fitID").value;
+      var nChg = document.getElementById("nChg").value;
+      var file = '3-fragfit/frag'+frag+'/fit'+fit+'/frag'+frag+'_fit'+fit+'_'+nChg+'chgs.pdb';
+      document.getElementById("viewer").innerHTML = file+'<br>RMSE: '+rmse[frag-1][fit-1][nChg-minChgs[frag-1]].toFixed(3)+' kcal/mol';
+      document.getElementById("viewport").innerHTML = "";
+      xyzFile = 'http://localhost:8000/'+file
+
+      var stage = new NGL.Stage("viewport");
+
+      Promise.all([
+        stage.loadFile(pdbFile),
+        stage.loadFile(xyzFile)
+      ]).then(function(comp) {
+        var pdbComp = comp[0]
+        var xyzComp = comp[1]
+
+        pdbComp.addRepresentation("line");
+        pdbComp.addRepresentation("label",{labelType: "atomname",
+                                        radius: "0.7",
+                                           color: "cyan"});
+        xyzComp.addRepresentation("spacefill",{radius: "0.1"});
+        stage.autoView();
+        } );
+        
+    }
+  </script>
+</body>
+</html>
