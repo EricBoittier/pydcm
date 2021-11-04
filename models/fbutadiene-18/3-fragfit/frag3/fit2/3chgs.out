@@ -1,0 +1,125 @@
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/fbutadiene-18/ref/B.p.cube"...
+
+  B.pdb Potential
+  Electrostatic potential from Total SCF Density
+   10  -10.324647   -7.560558   -6.513059
+  112    0.166667    0.000000    0.000000
+  100    0.000000    0.166667    0.000000
+   79    0.000000    0.000000    0.166667
+    6    6.000000    1.620043    2.491185   -0.000082
+    6    6.000000    0.908110    0.081892   -0.000240
+    6    6.000000   -1.616645   -1.047806   -0.000306
+    6    6.000000   -3.811895    0.194664    0.000259
+    1    1.000000    3.599860    2.995094    0.001207
+    1    1.000000    0.226637    3.984252   -0.001820
+    9    9.000000    2.743594   -1.735320    0.000204
+    1    1.000000   -1.607877   -3.099400   -0.000380
+    1    1.000000   -3.921420    2.240822    0.001916
+    1    1.000000   -5.587219   -0.822496   -0.000537
+  1.98186E-02  2.13111E-02  2.15167E-02  2.00425E-02  1.77954E-02  1.80767E-02
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+ -4.75998E-03 -4.76219E-03 -4.77039E-03 -4.78430E-03 -4.80341E-03 -4.82705E-03
+
+203195 out of 884800 gridpoints are considered ( 23.0%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+File "multipole7_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole7_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole7_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole7_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_4charges.xyz" already exists. Fitting procedure is skipped.
+Fragment fit detected
+Fitting to MTP grid, discarding reference MEP cube data
+Subsequent stats etc. are compared to MTP data, not the
+MEP from the reference cube file
+Total fragment charge (a.u.):         5.442900772E-02
+Running DE in parallel with 1 thread(s)!
+
+Starting fitting procedure for 3 charges, trial 1
+gen      0/6000      elitist  2.9780595E-03 feasible? T
+gen    100/6000      elitist  9.3112050E-04 feasible? T
+gen    200/6000      elitist  8.8544528E-04 feasible? T
+gen    300/6000      elitist  8.8079360E-04 feasible? T
+gen    400/6000      elitist  8.7850001E-04 feasible? T
+gen    500/6000      elitist  8.7843571E-04 feasible? T
+gen    600/6000      elitist  8.7843364E-04 feasible? T
+population converged towards a single solution after 679 generations.
+Starting local simplex optimization:
+Solution before refinement:      8.7843359934E-04
+ performing expansion, best =    8.7843359884443874E-004
+ performing expansion, best =    8.7843359854525619E-004
+Exiting simplex optimization after   351 iterations
+Solution after  refinement:      8.7843359855E-04
+RMSE         8.784335985E-04 Hartree
+NEW BEST!
+
+Starting fitting procedure for 3 charges, trial 2
+gen      0/6000      elitist  3.4800027E-03 feasible? T
+gen    100/6000      elitist  9.2361106E-04 feasible? T
+gen    200/6000      elitist  8.7996359E-04 feasible? T
+gen    300/6000      elitist  8.7853668E-04 feasible? T
+gen    400/6000      elitist  8.7843546E-04 feasible? T
+gen    500/6000      elitist  8.7843366E-04 feasible? T
+population converged towards a single solution after 599 generations.
+Starting local simplex optimization:
+Solution before refinement:      8.7843358989E-04
+ performing expansion, best =    8.7843358965104834E-004
+ performing expansion, best =    8.7843358932127523E-004
+Exiting simplex optimization after   345 iterations
+Solution after  refinement:      8.7843358932E-04
+RMSE         8.784335893E-04 Hartree
+NEW BEST!
+
+Starting fitting procedure for 3 charges, trial 3
+gen      0/6000      elitist  2.4799302E-03 feasible? T
+gen    100/6000      elitist  9.2500402E-04 feasible? T
+gen    200/6000      elitist  8.9189759E-04 feasible? T
+gen    300/6000      elitist  8.7860691E-04 feasible? T
+gen    400/6000      elitist  8.7844288E-04 feasible? T
+gen    500/6000      elitist  8.7843375E-04 feasible? T
+gen    600/6000      elitist  8.7843359E-04 feasible? T
+population converged towards a single solution after 623 generations.
+Starting local simplex optimization:
+Solution before refinement:      8.7843358951E-04
+Exiting simplex optimization after   355 iterations
+Solution after  refinement:      8.7843358951E-04
+RMSE         8.784335895E-04 Hartree
+
+Starting fitting procedure for 3 charges, trial 4
+gen      0/6000      elitist  2.4294332E-03 feasible? T
+gen    100/6000      elitist  9.0549018E-04 feasible? T
+gen    200/6000      elitist  8.7997389E-04 feasible? T
+gen    300/6000      elitist  8.7844109E-04 feasible? T
+gen    400/6000      elitist  8.7843371E-04 feasible? T
+gen    500/6000      elitist  8.7843359E-04 feasible? T
+population converged towards a single solution after 517 generations.
+Starting local simplex optimization:
+Solution before refinement:      8.7843358993E-04
+ performing expansion, best =    8.7843358977637734E-004
+ performing expansion, best =    8.7843358935063879E-004
+Exiting simplex optimization after   365 iterations
+Solution after  refinement:      8.7843358935E-04
+RMSE         8.784335894E-04 Hartree
+
+Best found solution for 3 charges:
+        RMSE         5.512249832E-01 kcal/mol
+         MAE         3.738024989E-01 kcal/mol
+     max. AE         4.435360248E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+     2.7880763    -2.0073056     0.0454194    -0.2456355
+     0.7752753     0.6235581     0.9139052    -0.1491508
+     0.5835268    -0.1968932     0.2268450     0.4492153
+

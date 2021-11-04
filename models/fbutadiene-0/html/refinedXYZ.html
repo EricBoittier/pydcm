@@ -1,0 +1,63 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+        </head>
+        <body>
+          <script src="https://prakt.chemie.unibas.ch/~devereux/ngl-master/dist/ngl.js"></script>
+        <!--  <script src="https://unpkg.com/ngl"></script>-->
+          <script>
+            var xyzFile = 'http://localhost:8880/5-refine/18-charges/18-charges.pdb'
+            var pdbFile = 'http://localhost:8880/ref/mol.pdb'
+          </script>
+          <h3>NGL Visualization of Molecular Models Constructed from Fragments</h3>
+          
+          <table><tr><td>No. of charges</td><td>
+          <input type="number" id="nChg" min="18" max="54" step="1" value="18" onkeydown="return false"
+          onmouseup="loadXYZ()"></td></tr>
+          </table>
+          <br>
+    
+          <table><tr><td>
+          <p><div id="viewer"></div></p>
+          </td></tr><tr><td>
+          <div id="viewport" style="width:800px; height:800px;"></div>
+          </td></tr></table>
+          <script>
+              var minChgs=18;
+              var rmse=[0.5177958693,0.5141406777,0.5200775982,0.4925570913,0.4954574653,0.4929717866,0.4972105058,0.4948289356,0.4922762742,0.491384644,0.4918398862,0.489032558,0.4906846089,0.4849173812,0.48523976,0.4838029689,0.4836591355,0.4829211201,0.4813799903,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0];
+
+            document.addEventListener("DOMContentLoaded", function () {
+                loadXYZ();
+            } );
+    
+            function loadXYZ() {
+              var nChg = document.getElementById("nChg").value;
+              var file = '5-refine/'+nChg+'-charges/'+nChg+'-charges.pdb';
+              document.getElementById("viewer").innerHTML = file +'<br>RMSE: '+rmse[nChg-minChgs].toFixed(3)+' kcal/mol';
+              document.getElementById("viewport").innerHTML = "";
+              xyzFile = 'http://localhost:8880/'+file
+    
+              var stage = new NGL.Stage("viewport");
+    
+              Promise.all([
+                stage.loadFile(pdbFile),
+                stage.loadFile(xyzFile)
+              ]).then(function(comp) {
+                var pdbComp = comp[0]
+                var xyzComp = comp[1]
+    
+                pdbComp.addRepresentation("line");
+                pdbComp.addRepresentation("label",{labelType: "atomname",
+                                                radius: "0.7",
+                                                   color: "cyan"});
+                xyzComp.addRepresentation("spacefill",{radius: "0.1"});
+                stage.autoView();
+                } );
+    
+            }
+          </script>
+        </body>
+        </html>
+        

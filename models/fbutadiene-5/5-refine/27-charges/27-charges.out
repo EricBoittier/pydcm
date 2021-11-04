@@ -1,0 +1,344 @@
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/fbutadiene-5/ref/B.p.cube"...
+
+  B.pdb Potential
+  Electrostatic potential from Total SCF Density
+   10   -9.523505   -7.980533   -7.103730
+  119    0.166667    0.000000    0.000000
+   91    0.000000    0.166667    0.000000
+   86    0.000000    0.000000    0.166667
+    6    6.000000   -3.010753   -1.467781    0.411389
+    6    6.000000   -0.986749   -0.122455   -0.217071
+    6    6.000000    1.601222   -1.053695   -0.590978
+    6    6.000000    3.633552   -0.023214    0.486105
+    1    1.000000   -4.798379   -0.560773    0.811121
+    1    1.000000   -2.897238   -3.506380    0.487381
+    9    9.000000   -1.166171    2.450557   -0.229039
+    1    1.000000    1.766796   -2.828174   -1.608960
+    1    1.000000    3.515233    1.709731    1.572033
+    1    1.000000    5.485495   -0.866552    0.263106
+  3.31692E-03  3.41411E-03  3.50260E-03  3.58165E-03  3.65062E-03  3.70898E-03
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  3.60191E-03  3.68247E-03  3.75480E-03  3.81850E-03  3.87330E-03  3.91898E-03
+
+431831 out of 931294 gridpoints are considered ( 46.4%).
+
+...done!
+
+
+
+
+ Refining solution from file/home/boittier/pydcm/models/fbutadiene-5/4-combine/27-combined.xyz
+ Contains     27 charges
+      Initial RMSE =         5.003785303E-01 kcal/mol
+Running DE in parallel with 1 thread(s)!
+
+
+User requested refinement using simplex algorithm (no DE)
+
+ performing expansion, best =    7.9133195691730911E-004
+ performing expansion, best =    7.9073656741840729E-004
+ performing expansion, best =    7.9058999780876461E-004
+ performing expansion, best =    7.8987001347627719E-004
+ performing expansion, best =    7.8968205116983746E-004
+ performing expansion, best =    7.8944837106711236E-004
+ performing expansion, best =    7.8677696674105081E-004
+ performing expansion, best =    7.8175067929681737E-004
+ performing expansion, best =    7.8063933127014030E-004
+ performing expansion, best =    7.8056494147973269E-004
+ performing expansion, best =    7.8037037454057755E-004
+ performing expansion, best =    7.8036420330233045E-004
+ performing expansion, best =    7.8025941395590953E-004
+ performing expansion, best =    7.7992736205551179E-004
+ performing expansion, best =    7.7935480308491466E-004
+ performing expansion, best =    7.7917756735432144E-004
+ performing expansion, best =    7.7852219860570179E-004
+ performing expansion, best =    7.7833672782673955E-004
+ performing expansion, best =    7.7798949454013127E-004
+ performing expansion, best =    7.7789009583819247E-004
+ performing expansion, best =    7.7780232022560934E-004
+ performing expansion, best =    7.7748921090873885E-004
+ performing expansion, best =    7.7730238543459972E-004
+ performing expansion, best =    7.7719585305644607E-004
+ performing expansion, best =    7.7717726469760464E-004
+ performing expansion, best =    7.7699418184965278E-004
+ performing expansion, best =    7.7668853172165996E-004
+ performing expansion, best =    7.7668720982006462E-004
+ performing expansion, best =    7.7668705580758357E-004
+ performing expansion, best =    7.7667964407882278E-004
+ performing expansion, best =    7.7659956785241493E-004
+ performing expansion, best =    7.7659709241952848E-004
+ performing expansion, best =    7.7655467422458268E-004
+ performing expansion, best =    7.7641269201347883E-004
+ performing expansion, best =    7.7634096991048942E-004
+ performing expansion, best =    7.7629803845410809E-004
+ performing expansion, best =    7.7626274040646932E-004
+ performing expansion, best =    7.7617127244206249E-004
+ performing expansion, best =    7.7599877236804796E-004
+ performing expansion, best =    7.7584655000190053E-004
+ performing expansion, best =    7.7571616510232610E-004
+ performing expansion, best =    7.7561717929660527E-004
+ performing expansion, best =    7.7542038962646897E-004
+ performing expansion, best =    7.7511003252263104E-004
+ performing expansion, best =    7.7488653112583214E-004
+ performing expansion, best =    7.7463080199269350E-004
+ performing expansion, best =    7.7453025024257379E-004
+ performing expansion, best =    7.7435550539374672E-004
+ performing expansion, best =    7.7431863026417025E-004
+ performing expansion, best =    7.7431516432288823E-004
+ performing expansion, best =    7.7428256313895154E-004
+ performing expansion, best =    7.7409361126854999E-004
+ performing expansion, best =    7.7388889435813836E-004
+ performing expansion, best =    7.7377877205357865E-004
+ performing expansion, best =    7.7363543595854222E-004
+ performing expansion, best =    7.7361585907672974E-004
+ performing expansion, best =    7.7360394311490918E-004
+ performing expansion, best =    7.7360129125214920E-004
+ performing expansion, best =    7.7358079538772818E-004
+ performing expansion, best =    7.7325636801043901E-004
+ performing expansion, best =    7.7285344769179129E-004
+ performing expansion, best =    7.7249065691963254E-004
+ performing expansion, best =    7.7243829772685529E-004
+ performing expansion, best =    7.7226694630087411E-004
+ performing expansion, best =    7.7220610664580644E-004
+ performing expansion, best =    7.7212551806188617E-004
+ performing expansion, best =    7.7209548088045979E-004
+ performing expansion, best =    7.7194422578510653E-004
+ performing expansion, best =    7.7194041882590238E-004
+ performing expansion, best =    7.7190745280459445E-004
+ performing expansion, best =    7.7185826471891437E-004
+ performing expansion, best =    7.7184309936871327E-004
+ performing expansion, best =    7.7177861720895689E-004
+ performing expansion, best =    7.7166117313870442E-004
+ performing expansion, best =    7.7160815433658400E-004
+ performing expansion, best =    7.7152242806959633E-004
+ performing expansion, best =    7.7143970623940752E-004
+ performing expansion, best =    7.7139589956807338E-004
+ performing expansion, best =    7.7136911870145377E-004
+ performing expansion, best =    7.7135762944655236E-004
+ performing expansion, best =    7.7135086017591722E-004
+ performing expansion, best =    7.7130403507333801E-004
+ performing expansion, best =    7.7126349353707677E-004
+ performing expansion, best =    7.7124217578486149E-004
+ performing expansion, best =    7.7122240904872535E-004
+ performing expansion, best =    7.7119639691485822E-004
+ performing expansion, best =    7.7116860643911911E-004
+ performing expansion, best =    7.7116084153815829E-004
+ performing expansion, best =    7.7113143649292686E-004
+ performing expansion, best =    7.7112149553990907E-004
+ performing expansion, best =    7.7111952310371639E-004
+ performing expansion, best =    7.7110204692804637E-004
+ performing expansion, best =    7.7107053033557624E-004
+ performing expansion, best =    7.7100347757409142E-004
+ performing expansion, best =    7.7096760520281289E-004
+ performing expansion, best =    7.7090812560525422E-004
+ performing expansion, best =    7.7088183998329772E-004
+ performing expansion, best =    7.7081704056665011E-004
+ performing expansion, best =    7.7081451746224133E-004
+ performing expansion, best =    7.7081433964061965E-004
+ performing expansion, best =    7.7076301174740496E-004
+ performing expansion, best =    7.7066895752323254E-004
+ performing expansion, best =    7.7058321627498374E-004
+ performing expansion, best =    7.7057014803867988E-004
+ performing expansion, best =    7.7056671478029862E-004
+ performing expansion, best =    7.7053544440590848E-004
+ performing expansion, best =    7.7051906069216462E-004
+ performing expansion, best =    7.7050620819783854E-004
+ performing expansion, best =    7.7050000846224872E-004
+ performing expansion, best =    7.7045167257300837E-004
+ performing expansion, best =    7.7043649653856948E-004
+ performing expansion, best =    7.7043177637357786E-004
+ performing expansion, best =    7.7043012424583542E-004
+ performing expansion, best =    7.7039045242160639E-004
+ performing expansion, best =    7.7036525957896939E-004
+ performing expansion, best =    7.7034568685333633E-004
+ performing expansion, best =    7.7028479959425798E-004
+ performing expansion, best =    7.7027744818258304E-004
+ performing expansion, best =    7.7026682161922592E-004
+ performing expansion, best =    7.7026046757005520E-004
+ performing expansion, best =    7.7023066629228350E-004
+ performing expansion, best =    7.7020751244899109E-004
+ performing expansion, best =    7.7020715598737110E-004
+ performing expansion, best =    7.7020075338547517E-004
+ performing expansion, best =    7.7015100026024067E-004
+ performing expansion, best =    7.7009862145690155E-004
+ performing expansion, best =    7.7009506803254980E-004
+ performing expansion, best =    7.7006127317323745E-004
+ performing expansion, best =    7.7005473317760874E-004
+ performing expansion, best =    7.7004894263889821E-004
+ performing expansion, best =    7.7004560437872428E-004
+ performing expansion, best =    7.7001553959319194E-004
+ performing expansion, best =    7.7000761824606542E-004
+ performing expansion, best =    7.7000477289114304E-004
+ performing expansion, best =    7.6994769173082734E-004
+ performing expansion, best =    7.6993235513606116E-004
+ performing expansion, best =    7.6993211391847098E-004
+ performing expansion, best =    7.6990525903742062E-004
+ performing expansion, best =    7.6989759862356258E-004
+ performing expansion, best =    7.6983521580469927E-004
+ performing expansion, best =    7.6977540342677972E-004
+ performing expansion, best =    7.6971830239683638E-004
+ performing expansion, best =    7.6970524465500283E-004
+ performing expansion, best =    7.6969443800606894E-004
+ performing expansion, best =    7.6969101968701826E-004
+ performing expansion, best =    7.6965287699754491E-004
+ performing expansion, best =    7.6964410399424615E-004
+ performing expansion, best =    7.6960462113177960E-004
+ performing expansion, best =    7.6956933359240457E-004
+ performing expansion, best =    7.6952132044785164E-004
+ performing expansion, best =    7.6948214542734371E-004
+ performing expansion, best =    7.6947116879051106E-004
+ performing expansion, best =    7.6946945113600383E-004
+ performing expansion, best =    7.6944322021231656E-004
+ performing expansion, best =    7.6943412536479433E-004
+ performing expansion, best =    7.6939541076205846E-004
+ performing expansion, best =    7.6936014546297041E-004
+ performing expansion, best =    7.6935502778333823E-004
+ performing expansion, best =    7.6933256895276268E-004
+ performing expansion, best =    7.6932133766386464E-004
+ performing expansion, best =    7.6928946890242799E-004
+ performing expansion, best =    7.6924640308406842E-004
+ performing expansion, best =    7.6924492748310148E-004
+ performing expansion, best =    7.6920096797705555E-004
+ performing expansion, best =    7.6919007854751647E-004
+ performing expansion, best =    7.6918865302637415E-004
+ performing expansion, best =    7.6916622987550822E-004
+ performing expansion, best =    7.6916350683901846E-004
+ performing expansion, best =    7.6912567979718334E-004
+ performing expansion, best =    7.6911155453365516E-004
+ performing expansion, best =    7.6910619432302651E-004
+ performing expansion, best =    7.6910141994018398E-004
+ performing expansion, best =    7.6907889342423008E-004
+ performing expansion, best =    7.6907058763978813E-004
+ performing expansion, best =    7.6906528148400395E-004
+ performing expansion, best =    7.6903645657343505E-004
+ performing expansion, best =    7.6902745676909340E-004
+ performing expansion, best =    7.6902239910356482E-004
+ performing expansion, best =    7.6899996812859295E-004
+ performing expansion, best =    7.6898677328231073E-004
+ performing expansion, best =    7.6898508990191797E-004
+ performing expansion, best =    7.6897822373407025E-004
+ performing expansion, best =    7.6894914284775262E-004
+ performing expansion, best =    7.6892652865130369E-004
+ performing expansion, best =    7.6890693130534206E-004
+ performing expansion, best =    7.6890142149507268E-004
+ performing expansion, best =    7.6889608622860025E-004
+ performing expansion, best =    7.6887300319091053E-004
+ performing expansion, best =    7.6886578972519863E-004
+ performing expansion, best =    7.6883565936102015E-004
+ performing expansion, best =    7.6881215095929466E-004
+ performing expansion, best =    7.6877544280292082E-004
+ performing expansion, best =    7.6874498243900170E-004
+ performing expansion, best =    7.6872037453419963E-004
+ performing expansion, best =    7.6871970947484059E-004
+ performing expansion, best =    7.6871765034746786E-004
+ performing expansion, best =    7.6871531637006394E-004
+ performing expansion, best =    7.6869087897974949E-004
+ performing expansion, best =    7.6867932114001788E-004
+ performing expansion, best =    7.6867904203764179E-004
+ performing expansion, best =    7.6867671508814748E-004
+ performing expansion, best =    7.6867562879655760E-004
+ performing expansion, best =    7.6865868421885808E-004
+ performing expansion, best =    7.6863600570671511E-004
+ performing expansion, best =    7.6863338985830646E-004
+ performing expansion, best =    7.6860892584628023E-004
+ performing expansion, best =    7.6857824291686231E-004
+ performing expansion, best =    7.6854200961896956E-004
+ performing expansion, best =    7.6850630847868754E-004
+ performing expansion, best =    7.6847670273584871E-004
+ performing expansion, best =    7.6845302075671373E-004
+ performing expansion, best =    7.6841672305843589E-004
+ performing expansion, best =    7.6839913728099106E-004
+ performing expansion, best =    7.6836100710227099E-004
+ performing expansion, best =    7.6831701509164942E-004
+ performing expansion, best =    7.6828445542743225E-004
+ performing expansion, best =    7.6824702628390659E-004
+ performing expansion, best =    7.6824111728448228E-004
+ performing expansion, best =    7.6819681576616357E-004
+ performing expansion, best =    7.6816473174260021E-004
+ performing expansion, best =    7.6813812897677069E-004
+ performing expansion, best =    7.6809902767600228E-004
+ performing expansion, best =    7.6805676611200828E-004
+ performing expansion, best =    7.6801319721056386E-004
+ performing expansion, best =    7.6800497504059359E-004
+ performing expansion, best =    7.6796163512557426E-004
+ performing expansion, best =    7.6792947832940287E-004
+ performing expansion, best =    7.6792029631800969E-004
+ performing expansion, best =    7.6787835884327491E-004
+ performing expansion, best =    7.6787100404436569E-004
+ performing expansion, best =    7.6784030023673358E-004
+ performing expansion, best =    7.6781587585197475E-004
+ performing expansion, best =    7.6778580035771315E-004
+ performing expansion, best =    7.6778563968138435E-004
+ performing expansion, best =    7.6777218085426202E-004
+ performing expansion, best =    7.6774669004293342E-004
+ performing expansion, best =    7.6771685484061159E-004
+ performing expansion, best =    7.6771460809610013E-004
+ performing expansion, best =    7.6769927943593766E-004
+ performing expansion, best =    7.6769643447236098E-004
+ performing expansion, best =    7.6769249120812186E-004
+ performing expansion, best =    7.6768803944261626E-004
+ performing expansion, best =    7.6768615477471438E-004
+ performing expansion, best =    7.6768398442153454E-004
+ performing expansion, best =    7.6766363248063213E-004
+ performing expansion, best =    7.6766226604609012E-004
+ performing expansion, best =    7.6765778862112320E-004
+ performing expansion, best =    7.6765730494556808E-004
+ performing expansion, best =    7.6765014517434632E-004
+ performing expansion, best =    7.6764973574160308E-004
+ performing expansion, best =    7.6764950636010263E-004
+ performing expansion, best =    7.6764013786182253E-004
+ performing expansion, best =    7.6763697176984974E-004
+ performing expansion, best =    7.6763277354320472E-004
+ performing expansion, best =    7.6762953197911249E-004
+ performing expansion, best =    7.6762672362042995E-004
+ performing expansion, best =    7.6762299110087306E-004
+ performing expansion, best =    7.6762165598629731E-004
+ performing expansion, best =    7.6762095979962194E-004
+ performing expansion, best =    7.6762083189010801E-004
+ performing expansion, best =    7.6761434457193545E-004
+ performing expansion, best =    7.6761404057186587E-004
+ performing expansion, best =    7.6761360229486188E-004
+ performing expansion, best =    7.6760918478578557E-004
+ performing expansion, best =    7.6760552454335329E-004
+ performing expansion, best =    7.6760233693877206E-004
+Exiting simplex optimization after 10001 iterations
+RMSE         7.676023369E-04 Hartree
+NEW BEST!
+Best found solution for 27 charges:
+        RMSE         4.816773749E-01 kcal/mol
+         MAE         2.848741723E-01 kcal/mol
+     max. AE         4.638990737E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+     3.4530499     2.3815646     1.9091204     0.0672572
+     5.5652208    -1.3032255     0.4827433    -0.4747515
+     5.7179024    -1.2835418     0.4357719     0.4842509
+     2.9346245    -0.7249530     0.7939899    -0.2954266
+     4.0436636    -0.9790702     0.2518830     0.2529870
+     2.8049808     0.1329207     0.2460071     0.9630824
+     2.9027697     0.0611808    -0.0156344    -0.9900684
+     2.6058082    -1.4088799    -0.6156008     0.3709364
+     1.1893575    -1.8036296    -0.3253443     0.9612042
+     1.6343344    -0.0778166    -0.1647320     0.5398033
+     2.0573077    -0.5885947    -0.3507777    -0.9879323
+     1.3870683    -1.8393470    -0.2789275    -0.9310273
+     1.9058694    -3.4309832    -1.8972850     0.0651873
+    -0.9805589     1.5622506    -0.2159595     0.4374700
+    -1.2447581     3.3548458    -0.2299415     0.2877799
+    -1.1777581     2.5707682    -0.2241159    -0.9999958
+    -1.7329049    -0.5571324    -0.5627327    -0.5822824
+    -1.4211945    -0.7510136     0.3696002    -0.9051241
+    -1.4853049     0.3964779    -0.1747893     0.8422478
+    -1.1752593    -0.9172799     0.0543756     0.9954193
+    -5.4699335    -0.3867572     1.0140992     0.0754797
+    -4.7833538    -1.1324526     0.4476385    -0.0037242
+    -2.9325712    -0.7397154    -0.1079303    -0.6792450
+    -2.6148891    -0.7552557     0.6155602    -0.6092640
+    -3.0304254    -0.5589603     0.2435032     0.9831300
+    -2.9070105    -3.7217895     0.1481910     0.2985704
+    -2.9736504    -3.7472705    -0.1456966    -0.1659642
+

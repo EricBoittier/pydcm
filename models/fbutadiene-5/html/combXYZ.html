@@ -1,0 +1,61 @@
+
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+        </head>
+        <body>
+          <script src="https://prakt.chemie.unibas.ch/~devereux/ngl-master/dist/ngl.js"></script>
+        <!--  <script src="https://unpkg.com/ngl"></script>-->
+          <script>
+            var xyzFile = 'http://localhost:8886/4-combine/10-combined.pdb'
+            var pdbFile = 'http://localhost:8886/ref/mol.pdb'
+          </script>
+          <h3>NGL Visualization of Molecular Models Constructed from Fragments</h3>
+          
+          <table><tr><td>No. of charges</td><td>
+          <input type="number" id="nChg" min="10" max="40" step="1" value="10" onkeydown="return false"
+          onmouseup="loadXYZ()"></td></tr>
+          </table>
+          <br>
+    
+          <table><tr><td>
+          <p><div id="viewer"></div></p>
+          </td></tr><tr><td>
+          <div id="viewport" style="width:800px; height:800px;"></div>
+          </td></tr></table>
+          <script>
+        
+            document.addEventListener("DOMContentLoaded", function () {
+                loadXYZ();
+            } );
+    
+            function loadXYZ() {
+              var nChg = document.getElementById("nChg").value;
+              var file = '4-combine/'+nChg+'-combined.pdb';
+              document.getElementById("viewer").innerHTML = file /*+'<br>RMSE: '+rmse[frag-1][fit-1][nChg-minChgs[frag-1]].toFixed(3)+' kcal/mol';*/
+              document.getElementById("viewport").innerHTML = "";
+              xyzFile = 'http://localhost:8886/'+file
+    
+              var stage = new NGL.Stage("viewport");
+    
+              Promise.all([
+                stage.loadFile(pdbFile),
+                stage.loadFile(xyzFile)
+              ]).then(function(comp) {
+                var pdbComp = comp[0]
+                var xyzComp = comp[1]
+    
+                pdbComp.addRepresentation("line");
+                pdbComp.addRepresentation("label",{labelType: "atomname",
+                                                radius: "0.7",
+                                                   color: "cyan"});
+                xyzComp.addRepresentation("spacefill",{radius: "0.1"});
+                stage.autoView();
+                } );
+    
+            }
+          </script>
+        </body>
+        </html>
+        

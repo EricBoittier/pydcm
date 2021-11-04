@@ -1,0 +1,459 @@
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/fbutadiene-5/ref/B.p.cube"...
+
+  B.pdb Potential
+  Electrostatic potential from Total SCF Density
+   10   -9.523505   -7.980533   -7.103730
+  119    0.166667    0.000000    0.000000
+   91    0.000000    0.166667    0.000000
+   86    0.000000    0.000000    0.166667
+    6    6.000000   -3.010753   -1.467781    0.411389
+    6    6.000000   -0.986749   -0.122455   -0.217071
+    6    6.000000    1.601222   -1.053695   -0.590978
+    6    6.000000    3.633552   -0.023214    0.486105
+    1    1.000000   -4.798379   -0.560773    0.811121
+    1    1.000000   -2.897238   -3.506380    0.487381
+    9    9.000000   -1.166171    2.450557   -0.229039
+    1    1.000000    1.766796   -2.828174   -1.608960
+    1    1.000000    3.515233    1.709731    1.572033
+    1    1.000000    5.485495   -0.866552    0.263106
+ -1.07044E-02 -1.10666E-02 -1.13574E-02 -1.15743E-02 -1.17163E-02 -1.17849E-02
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  1.50131E-02  1.55585E-02  1.60153E-02  1.39214E-02  1.45256E-02  1.50615E-02
+
+177972 out of 931294 gridpoints are considered ( 19.1%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+Running DE in parallel with 1 thread(s)!
+
+Starting fitting procedure for multipole expansion of atom 3 with 1 charges, trial 1
+gen      0/2000      elitist  4.1316378E-03 feasible? T
+gen    100/2000      elitist  4.0169509E-03 feasible? T
+gen    200/2000      elitist  4.0127803E-03 feasible? T
+gen    300/2000      elitist  4.0088678E-03 feasible? T
+gen    400/2000      elitist  4.0012920E-03 feasible? T
+gen    500/2000      elitist  4.0011839E-03 feasible? T
+population converged towards a single solution after 517 generations.
+Starting local simplex optimization:
+Solution before refinement:      4.0011838713E-03
+ performing expansion, best =    4.0011838704765348E-003
+Exiting simplex optimization after    98 iterations
+Solution after  refinement:      4.0011838705E-03
+RMSE         4.001183870E-03Hartree
+NEW BEST!
+
+Starting fitting procedure for multipole expansion of atom 3 with 1 charges, trial 2
+gen      0/2000      elitist  4.1062928E-03 feasible? T
+gen    100/2000      elitist  4.0011839E-03 feasible? T
+population converged towards a single solution after 128 generations.
+Starting local simplex optimization:
+Solution before refinement:      4.0011838705E-03
+Exiting simplex optimization after    99 iterations
+Solution after  refinement:      4.0011838705E-03
+RMSE         4.001183870E-03Hartree
+NEW BEST!
+
+Starting fitting procedure for multipole expansion of atom 3 with 1 charges, trial 3
+gen      0/2000      elitist  4.2796543E-03 feasible? T
+gen    100/2000      elitist  4.0011839E-03 feasible? T
+population converged towards a single solution after 137 generations.
+Starting local simplex optimization:
+Solution before refinement:      4.0011838707E-03
+ performing expansion, best =    4.0011838706536396E-003
+Exiting simplex optimization after   100 iterations
+Solution after  refinement:      4.0011838707E-03
+RMSE         4.001183871E-03Hartree
+Starting fitting procedure for multipole expansion of atom 3 with 1 charges, trial 4
+gen      0/2000      elitist  4.4429514E-03 feasible? T
+gen    100/2000      elitist  4.0011839E-03 feasible? T
+population converged towards a single solution after 118 generations.
+Starting local simplex optimization:
+Solution before refinement:      4.0011838704E-03
+Exiting simplex optimization after   102 iterations
+Solution after  refinement:      4.0011838704E-03
+RMSE         4.001183870E-03Hartree
+NEW BEST!
+
+Best found solution for 1 charges:
+        RMSE         2.510778889E+00 kcal/mol
+         MAE         2.064670364E+00 kcal/mol
+     max. AE         8.386373477E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+     2.1354470    -0.4979881     0.1523269    -0.0462332
+
+Running DE in parallel with 1 thread(s)!
+
+Starting fitting procedure for multipole expansion of atom 3 with 2 charges, trial 1
+gen      0/4000      elitist  3.7424388E-03 feasible? T
+gen    100/4000      elitist  1.1697183E-03 feasible? T
+gen    200/4000      elitist  1.1502406E-03 feasible? T
+gen    300/4000      elitist  1.1500349E-03 feasible? T
+population converged towards a single solution after 386 generations.
+Starting local simplex optimization:
+Solution before refinement:      1.1500346789E-03
+Exiting simplex optimization after   262 iterations
+Solution after  refinement:      1.1500346789E-03
+RMSE         1.150034679E-03Hartree
+NEW BEST!
+
+Starting fitting procedure for multipole expansion of atom 3 with 2 charges, trial 2
+gen      0/4000      elitist  4.0087653E-03 feasible? T
+gen    100/4000      elitist  1.1647152E-03 feasible? T
+gen    200/4000      elitist  1.1503748E-03 feasible? T
+gen    300/4000      elitist  1.1500349E-03 feasible? T
+population converged towards a single solution after 388 generations.
+Starting local simplex optimization:
+Solution before refinement:      1.1500346791E-03
+ performing expansion, best =    1.1500346789924663E-003
+Exiting simplex optimization after   267 iterations
+Solution after  refinement:      1.1500346790E-03
+RMSE         1.150034679E-03Hartree
+Starting fitting procedure for multipole expansion of atom 3 with 2 charges, trial 3
+gen      0/4000      elitist  3.7116779E-03 feasible? T
+gen    100/4000      elitist  1.1821196E-03 feasible? T
+gen    200/4000      elitist  1.1506678E-03 feasible? T
+gen    300/4000      elitist  1.1500352E-03 feasible? T
+gen    400/4000      elitist  1.1500347E-03 feasible? T
+population converged towards a single solution after 436 generations.
+Starting local simplex optimization:
+Solution before refinement:      1.1500346790E-03
+Exiting simplex optimization after   257 iterations
+Solution after  refinement:      1.1500346790E-03
+RMSE         1.150034679E-03Hartree
+Starting fitting procedure for multipole expansion of atom 3 with 2 charges, trial 4
+gen      0/4000      elitist  3.9253464E-03 feasible? T
+gen    100/4000      elitist  1.2016117E-03 feasible? T
+gen    200/4000      elitist  1.1502279E-03 feasible? T
+gen    300/4000      elitist  1.1500352E-03 feasible? T
+population converged towards a single solution after 388 generations.
+Starting local simplex optimization:
+Solution before refinement:      1.1500346793E-03
+Exiting simplex optimization after   269 iterations
+Solution after  refinement:      1.1500346793E-03
+RMSE         1.150034679E-03Hartree
+Best found solution for 2 charges:
+        RMSE         7.216571113E-01 kcal/mol
+         MAE         5.332351663E-01 kcal/mol
+     max. AE         4.985703607E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+     2.3303050    -1.8284865    -0.7128167     0.9537668
+     2.4462924    -1.6504254    -0.5529994    -1.0000000
+
+Running DE in parallel with 1 thread(s)!
+
+Starting fitting procedure for multipole expansion of atom 3 with 3 charges, trial 1
+gen      0/6000      elitist  3.4791976E-03 feasible? T
+gen    100/6000      elitist  1.3149857E-03 feasible? T
+gen    200/6000      elitist  1.0129885E-03 feasible? T
+gen    300/6000      elitist  7.3196710E-04 feasible? T
+gen    400/6000      elitist  6.9486225E-04 feasible? T
+gen    500/6000      elitist  6.7790658E-04 feasible? T
+gen    600/6000      elitist  6.7735980E-04 feasible? T
+gen    700/6000      elitist  6.7731780E-04 feasible? T
+gen    800/6000      elitist  6.7731596E-04 feasible? T
+population converged towards a single solution after 900 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.7731586307E-04
+ performing expansion, best =    6.7731586304494535E-004
+ performing expansion, best =    6.7731586271880617E-004
+ performing expansion, best =    6.7731586264556875E-004
+Exiting simplex optimization after   461 iterations
+Solution after  refinement:      6.7731586265E-04
+RMSE         6.773158626E-04Hartree
+NEW BEST!
+
+Starting fitting procedure for multipole expansion of atom 3 with 3 charges, trial 2
+gen      0/6000      elitist  3.5576332E-03 feasible? T
+gen    100/6000      elitist  1.2231813E-03 feasible? T
+gen    200/6000      elitist  8.5456426E-04 feasible? T
+gen    300/6000      elitist  6.7952878E-04 feasible? T
+gen    400/6000      elitist  6.7743176E-04 feasible? T
+gen    500/6000      elitist  6.7732886E-04 feasible? T
+gen    600/6000      elitist  6.7731939E-04 feasible? T
+gen    700/6000      elitist  6.7731607E-04 feasible? T
+gen    800/6000      elitist  6.7731587E-04 feasible? T
+population converged towards a single solution after 852 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.7731586210E-04
+ performing expansion, best =    6.7731586208628805E-004
+ performing expansion, best =    6.7731586183778826E-004
+ performing expansion, best =    6.7731586177448939E-004
+ performing expansion, best =    6.7731586173187201E-004
+ performing expansion, best =    6.7731586161611044E-004
+Exiting simplex optimization after   472 iterations
+Solution after  refinement:      6.7731586162E-04
+RMSE         6.773158616E-04Hartree
+NEW BEST!
+
+Starting fitting procedure for multipole expansion of atom 3 with 3 charges, trial 3
+gen      0/6000      elitist  3.6879893E-03 feasible? T
+gen    100/6000      elitist  1.2117627E-03 feasible? T
+gen    200/6000      elitist  9.2437080E-04 feasible? T
+gen    300/6000      elitist  6.8334332E-04 feasible? T
+gen    400/6000      elitist  6.7781942E-04 feasible? T
+gen    500/6000      elitist  6.7735649E-04 feasible? T
+gen    600/6000      elitist  6.7731746E-04 feasible? T
+gen    700/6000      elitist  6.7731591E-04 feasible? T
+gen    800/6000      elitist  6.7731586E-04 feasible? T
+population converged towards a single solution after 827 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.7731586185E-04
+Exiting simplex optimization after   504 iterations
+Solution after  refinement:      6.7731586185E-04
+RMSE         6.773158618E-04Hartree
+Starting fitting procedure for multipole expansion of atom 3 with 3 charges, trial 4
+gen      0/6000      elitist  3.3883521E-03 feasible? T
+gen    100/6000      elitist  1.2728985E-03 feasible? T
+gen    200/6000      elitist  1.1255245E-03 feasible? T
+gen    300/6000      elitist  1.0072015E-03 feasible? T
+gen    400/6000      elitist  7.4861150E-04 feasible? T
+gen    500/6000      elitist  7.0367415E-04 feasible? T
+gen    600/6000      elitist  6.7910105E-04 feasible? T
+gen    700/6000      elitist  6.7738327E-04 feasible? T
+gen    800/6000      elitist  6.7734592E-04 feasible? T
+gen    900/6000      elitist  6.7731653E-04 feasible? T
+gen   1000/6000      elitist  6.7731588E-04 feasible? T
+gen   1100/6000      elitist  6.7731587E-04 feasible? T
+population converged towards a single solution after 1123 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.7731586476E-04
+ performing expansion, best =    6.7731586460471763E-004
+ performing expansion, best =    6.7731586456899620E-004
+Exiting simplex optimization after   458 iterations
+Solution after  refinement:      6.7731586457E-04
+RMSE         6.773158646E-04Hartree
+Best found solution for 3 charges:
+        RMSE         4.250217990E-01 kcal/mol
+         MAE         2.975159451E-01 kcal/mol
+     max. AE         2.510789291E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+     2.4615828    -0.7047736    -1.1245900    -0.3341889
+     2.3299613    -1.3055140    -0.5327122     1.0000000
+     2.4659138    -1.3763809    -0.0479398    -0.7120443
+
+Running DE in parallel with 1 thread(s)!
+
+Starting fitting procedure for multipole expansion of atom 3 with 4 charges, trial 1
+gen      0/8000      elitist  3.5661851E-03 feasible? T
+gen    100/8000      elitist  1.2901943E-03 feasible? T
+gen    200/8000      elitist  4.8066268E-04 feasible? T
+gen    300/8000      elitist  3.8756710E-04 feasible? T
+gen    400/8000      elitist  3.8040521E-04 feasible? T
+gen    500/8000      elitist  3.7608804E-04 feasible? T
+gen    600/8000      elitist  3.7335352E-04 feasible? T
+gen    700/8000      elitist  3.6108853E-04 feasible? T
+gen    800/8000      elitist  3.5407494E-04 feasible? T
+gen    900/8000      elitist  3.2775544E-04 feasible? T
+gen   1000/8000      elitist  3.0734839E-04 feasible? T
+gen   1100/8000      elitist  3.0509180E-04 feasible? T
+gen   1200/8000      elitist  3.0460589E-04 feasible? T
+gen   1300/8000      elitist  3.0446900E-04 feasible? T
+gen   1400/8000      elitist  3.0446213E-04 feasible? T
+gen   1500/8000      elitist  3.0444901E-04 feasible? T
+gen   1600/8000      elitist  3.0444494E-04 feasible? T
+gen   1700/8000      elitist  3.0444391E-04 feasible? T
+gen   1800/8000      elitist  3.0444381E-04 feasible? T
+gen   1900/8000      elitist  3.0444379E-04 feasible? T
+population converged towards a single solution after 1919 generations.
+Starting local simplex optimization:
+Solution before refinement:      3.0444379281E-04
+ performing expansion, best =    3.0444379195972637E-004
+ performing expansion, best =    3.0444379148656390E-004
+ performing expansion, best =    3.0444379059738086E-004
+ performing expansion, best =    3.0444378929902040E-004
+ performing expansion, best =    3.0444378890082981E-004
+ performing expansion, best =    3.0444378870135986E-004
+ performing expansion, best =    3.0444378859797392E-004
+ performing expansion, best =    3.0444378841005984E-004
+ performing expansion, best =    3.0444378804083609E-004
+Exiting simplex optimization after   604 iterations
+Solution after  refinement:      3.0444378804E-04
+RMSE         3.044437880E-04Hartree
+NEW BEST!
+
+Starting fitting procedure for multipole expansion of atom 3 with 4 charges, trial 2
+gen      0/8000      elitist  3.5385592E-03 feasible? T
+gen    100/8000      elitist  7.1947173E-04 feasible? T
+gen    200/8000      elitist  4.6420139E-04 feasible? T
+gen    300/8000      elitist  4.1284377E-04 feasible? T
+gen    400/8000      elitist  3.8783025E-04 feasible? T
+gen    500/8000      elitist  3.2785541E-04 feasible? T
+gen    600/8000      elitist  3.1075999E-04 feasible? T
+gen    700/8000      elitist  3.0815572E-04 feasible? T
+gen    800/8000      elitist  3.0751010E-04 feasible? T
+gen    900/8000      elitist  3.0442250E-04 feasible? T
+gen   1000/8000      elitist  3.0165140E-04 feasible? T
+gen   1100/8000      elitist  3.0141095E-04 feasible? T
+gen   1200/8000      elitist  3.0136900E-04 feasible? T
+gen   1300/8000      elitist  3.0136451E-04 feasible? T
+gen   1400/8000      elitist  3.0132971E-04 feasible? T
+gen   1500/8000      elitist  2.9711732E-04 feasible? T
+gen   1600/8000      elitist  2.9543475E-04 feasible? T
+gen   1700/8000      elitist  2.9461148E-04 feasible? T
+gen   1800/8000      elitist  2.9417095E-04 feasible? T
+gen   1900/8000      elitist  2.9399673E-04 feasible? T
+gen   2000/8000      elitist  2.9377251E-04 feasible? T
+gen   2100/8000      elitist  2.9326503E-04 feasible? T
+gen   2200/8000      elitist  2.9306331E-04 feasible? T
+gen   2300/8000      elitist  2.9293816E-04 feasible? T
+gen   2400/8000      elitist  2.9287432E-04 feasible? T
+gen   2500/8000      elitist  2.9282113E-04 feasible? T
+gen   2600/8000      elitist  2.9275685E-04 feasible? T
+gen   2700/8000      elitist  2.9271098E-04 feasible? T
+gen   2800/8000      elitist  2.9269063E-04 feasible? T
+gen   2900/8000      elitist  2.9266635E-04 feasible? T
+gen   3000/8000      elitist  2.9264284E-04 feasible? T
+gen   3100/8000      elitist  2.9262899E-04 feasible? T
+gen   3200/8000      elitist  2.9262545E-04 feasible? T
+gen   3300/8000      elitist  2.9248062E-04 feasible? T
+gen   3400/8000      elitist  2.9245439E-04 feasible? T
+gen   3500/8000      elitist  2.9245083E-04 feasible? T
+gen   3600/8000      elitist  2.9245034E-04 feasible? T
+gen   3700/8000      elitist  2.9244741E-04 feasible? T
+gen   3800/8000      elitist  2.9238490E-04 feasible? T
+gen   3900/8000      elitist  2.9232389E-04 feasible? T
+gen   4000/8000      elitist  2.9230448E-04 feasible? T
+gen   4100/8000      elitist  2.9229215E-04 feasible? T
+gen   4200/8000      elitist  2.9227942E-04 feasible? T
+gen   4300/8000      elitist  2.9227119E-04 feasible? T
+gen   4400/8000      elitist  2.9226745E-04 feasible? T
+gen   4500/8000      elitist  2.9226003E-04 feasible? T
+gen   4600/8000      elitist  2.9224357E-04 feasible? T
+gen   4700/8000      elitist  2.9223739E-04 feasible? T
+gen   4800/8000      elitist  2.9223324E-04 feasible? T
+gen   4900/8000      elitist  2.9222859E-04 feasible? T
+gen   5000/8000      elitist  2.9222735E-04 feasible? T
+gen   5100/8000      elitist  2.9222652E-04 feasible? T
+gen   5200/8000      elitist  2.9222578E-04 feasible? T
+gen   5300/8000      elitist  2.9222527E-04 feasible? T
+gen   5400/8000      elitist  2.9222501E-04 feasible? T
+gen   5500/8000      elitist  2.9222474E-04 feasible? T
+gen   5600/8000      elitist  2.9222469E-04 feasible? T
+population converged towards a single solution after 5651 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.9222468192E-04
+ performing expansion, best =    2.9222468185432132E-004
+ performing expansion, best =    2.9222468167721018E-004
+ performing expansion, best =    2.9222468164810439E-004
+ performing expansion, best =    2.9222468138120114E-004
+ performing expansion, best =    2.9222468129173250E-004
+ performing expansion, best =    2.9222468119552111E-004
+Exiting simplex optimization after   603 iterations
+Solution after  refinement:      2.9222468120E-04
+RMSE         2.922246812E-04Hartree
+NEW BEST!
+
+Starting fitting procedure for multipole expansion of atom 3 with 4 charges, trial 3
+gen      0/8000      elitist  3.8232122E-03 feasible? T
+gen    100/8000      elitist  1.1945331E-03 feasible? T
+gen    200/8000      elitist  8.7188817E-04 feasible? T
+gen    300/8000      elitist  4.6926793E-04 feasible? T
+gen    400/8000      elitist  4.2171212E-04 feasible? T
+gen    500/8000      elitist  3.7849217E-04 feasible? T
+gen    600/8000      elitist  3.3958145E-04 feasible? T
+gen    700/8000      elitist  3.3050220E-04 feasible? T
+gen    800/8000      elitist  3.2621373E-04 feasible? T
+gen    900/8000      elitist  3.2194555E-04 feasible? T
+gen   1000/8000      elitist  3.2081268E-04 feasible? T
+gen   1100/8000      elitist  3.1837954E-04 feasible? T
+gen   1200/8000      elitist  3.0897786E-04 feasible? T
+gen   1300/8000      elitist  3.0655545E-04 feasible? T
+gen   1400/8000      elitist  3.0586937E-04 feasible? T
+gen   1500/8000      elitist  3.0558374E-04 feasible? T
+gen   1600/8000      elitist  3.0499791E-04 feasible? T
+gen   1700/8000      elitist  3.0484322E-04 feasible? T
+gen   1800/8000      elitist  3.0482025E-04 feasible? T
+gen   1900/8000      elitist  3.0455956E-04 feasible? T
+gen   2000/8000      elitist  3.0446064E-04 feasible? T
+gen   2100/8000      elitist  3.0444576E-04 feasible? T
+gen   2200/8000      elitist  3.0444423E-04 feasible? T
+gen   2300/8000      elitist  3.0444398E-04 feasible? T
+gen   2400/8000      elitist  3.0444395E-04 feasible? T
+population converged towards a single solution after 2495 generations.
+Starting local simplex optimization:
+Solution before refinement:      3.0444391345E-04
+ performing expansion, best =    3.0444391042016477E-004
+ performing expansion, best =    3.0444390741055777E-004
+ performing expansion, best =    3.0444390508591686E-004
+ performing expansion, best =    3.0444390366868507E-004
+ performing expansion, best =    3.0444390282273692E-004
+ performing expansion, best =    3.0444390151267674E-004
+ performing expansion, best =    3.0444390039047198E-004
+ performing expansion, best =    3.0444390012158924E-004
+ performing expansion, best =    3.0444389945479005E-004
+ performing expansion, best =    3.0444389907721226E-004
+ performing expansion, best =    3.0444389891768909E-004
+ performing expansion, best =    3.0444389890208455E-004
+ performing expansion, best =    3.0444389869589868E-004
+ performing expansion, best =    3.0444389867438409E-004
+ performing expansion, best =    3.0444389840514959E-004
+Exiting simplex optimization after   596 iterations
+Solution after  refinement:      3.0444389841E-04
+RMSE         3.044438984E-04Hartree
+Starting fitting procedure for multipole expansion of atom 3 with 4 charges, trial 4
+gen      0/8000      elitist  3.5745739E-03 feasible? T
+gen    100/8000      elitist  7.5730336E-04 feasible? T
+gen    200/8000      elitist  3.8106002E-04 feasible? T
+gen    300/8000      elitist  3.7350614E-04 feasible? T
+gen    400/8000      elitist  3.5574758E-04 feasible? T
+gen    500/8000      elitist  3.3785094E-04 feasible? T
+gen    600/8000      elitist  3.1735970E-04 feasible? T
+gen    700/8000      elitist  3.0684330E-04 feasible? T
+gen    800/8000      elitist  3.0640411E-04 feasible? T
+gen    900/8000      elitist  3.0594777E-04 feasible? T
+gen   1000/8000      elitist  3.0521104E-04 feasible? T
+gen   1100/8000      elitist  3.0466121E-04 feasible? T
+gen   1200/8000      elitist  3.0453312E-04 feasible? T
+gen   1300/8000      elitist  3.0448596E-04 feasible? T
+gen   1400/8000      elitist  3.0444901E-04 feasible? T
+gen   1500/8000      elitist  3.0444810E-04 feasible? T
+gen   1600/8000      elitist  3.0444761E-04 feasible? T
+gen   1700/8000      elitist  3.0444513E-04 feasible? T
+gen   1800/8000      elitist  3.0444421E-04 feasible? T
+gen   1900/8000      elitist  3.0444411E-04 feasible? T
+gen   2000/8000      elitist  3.0444405E-04 feasible? T
+gen   2100/8000      elitist  3.0444380E-04 feasible? T
+gen   2200/8000      elitist  3.0444378E-04 feasible? T
+population converged towards a single solution after 2252 generations.
+Starting local simplex optimization:
+Solution before refinement:      3.0444377627E-04
+ performing expansion, best =    3.0444377550950145E-004
+ performing expansion, best =    3.0444377530154649E-004
+ performing expansion, best =    3.0444377385394490E-004
+ performing expansion, best =    3.0444377305807979E-004
+ performing expansion, best =    3.0444377302718778E-004
+ performing expansion, best =    3.0444377291226284E-004
+ performing expansion, best =    3.0444377264763868E-004
+ performing expansion, best =    3.0444377245641844E-004
+ performing expansion, best =    3.0444377115844119E-004
+ performing expansion, best =    3.0444377039540600E-004
+ performing expansion, best =    3.0444377023775893E-004
+ performing expansion, best =    3.0444377014693868E-004
+ performing expansion, best =    3.0444377013845328E-004
+ performing expansion, best =    3.0444377002654882E-004
+ performing expansion, best =    3.0444376990250785E-004
+Exiting simplex optimization after   612 iterations
+Solution after  refinement:      3.0444376990E-04
+RMSE         3.044437699E-04Hartree
+Best found solution for 4 charges:
+        RMSE         1.833736175E-01 kcal/mol
+         MAE         1.217941822E-01 kcal/mol
+     max. AE         1.488852067E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+     1.3828337    -0.1304676    -0.0943228     0.4409441
+     2.1766656    -1.5800580    -1.0443755     0.3949100
+     1.0523234    -1.9169211    -0.2743402     0.1179126
+     1.8614800    -0.8312105    -0.3680864    -1.0000000
+

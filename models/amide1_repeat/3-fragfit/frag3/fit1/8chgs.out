@@ -1,0 +1,138 @@
+Running in fitting mode
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/amide1_repeat/ref/1_1_new-0.chk.p.cube"...
+
+
+Reading "/home/boittier/pydcm/models/amide1_repeat/ref/1_1_new-0.chk.p.cube"...
+
+  mol.pdb Potential
+  Electrostatic potential from Total SCF Density
+   12   -9.955504   -7.513236   -6.512752
+  102    0.200250    0.000000    0.000000
+   76    0.000000    0.200250    0.000000
+   66    0.000000    0.000000    0.200250
+    6    6.000000   -0.908958    0.280655    0.000342
+    6    6.000000   -3.442752   -1.000483    0.000000
+    7    7.000000    1.150813   -1.227893   -0.000144
+  mol.pdb Potential
+    6    6.000000    3.690134   -0.187521    0.000125
+    8    8.000000   -0.720887    2.593738   -0.000240
+    1    1.000000   -4.491836   -0.395695   -1.641581
+  Electrostatic potential from Total SCF Density
+    1    1.000000   -3.314583   -3.036319   -0.007599
+   12   -9.955504   -7.513236   -6.512752
+    1    1.000000   -4.486047   -0.407878    1.649807
+    1    1.000000    0.935915   -3.080856   -0.001480
+    1    1.000000    5.027170   -1.725800    0.005467
+    1    1.000000    4.007247    0.964119   -1.652858
+    1    1.000000    4.002990    0.971880    1.648374
+  102    0.200250    0.000000    0.000000
+   76    0.000000    0.200250    0.000000
+   66    0.000000    0.000000    0.200250
+    6    6.000000   -0.908958    0.280655    0.000342
+    6    6.000000   -3.442752   -1.000483    0.000000
+    7    7.000000    1.150813   -1.227893   -0.000144
+    6    6.000000    3.690134   -0.187521    0.000125
+    8    8.000000   -0.720887    2.593738   -0.000240
+    1    1.000000   -4.491836   -0.395695   -1.641581
+    1    1.000000   -3.314583   -3.036319   -0.007599
+    1    1.000000   -4.486047   -0.407878    1.649807
+    1    1.000000    0.935915   -3.080856   -0.001480
+    1    1.000000    5.027170   -1.725800    0.005467
+    1    1.000000    4.007247    0.964119   -1.652858
+    1    1.000000    4.002990    0.971880    1.648374
+  3.87589E-03  3.90237E-03  3.92694E-03  3.94729E-03  3.96119E-03  3.96665E-03
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  3.44010E-03  3.45434E-03  3.46162E-03  3.46187E-03  3.45509E-03  3.44135E-03
+
+147272 out of 511632 gridpoints are considered ( 28.8%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+  3.87589E-03  3.90237E-03  3.92694E-03  3.94729E-03  3.96119E-03  3.96665E-03
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  3.44010E-03  3.45434E-03  3.46162E-03  3.46187E-03  3.45509E-03  3.44135E-03
+
+147272 out of 511632 gridpoints are considered ( 28.8%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+File "multipole8_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_4charges.xyz" already exists. Fitting procedure is skipped.
+Fragment fit detected
+Fitting to MTP grid, discarding reference MEP cube data
+Subsequent stats etc. are compared to MTP data, not the
+MEP from the reference cube file
+File "multipole4_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_4charges.xyz" already exists. Fitting procedure is skipped.
+Fragment fit detected
+Fitting to MTP grid, discarding reference MEP cube data
+Subsequent stats etc. are compared to MTP data, not the
+MEP from the reference cube file
+Total fragment charge (a.u.):         2.028237180E-01
+Running DE in parallel with 2 thread(s)!
+
+Starting fitting procedure for 8 charges, trial 1
+Total fragment charge (a.u.):         2.028237180E-01
+Running DE in parallel with 2 thread(s)!
+
+Starting fitting procedure for 8 charges, trial 1
+gen      0/16000      elitist  6.2747239E-03 feasible? F
+gen      0/16000      elitist  6.2747239E-03 feasible? F
+gen    100/16000      elitist  1.6760132E-03 feasible? T
+gen    100/16000      elitist  2.5509308E-03 feasible? T
+gen    200/16000      elitist  7.0687775E-04 feasible? T
+gen    200/16000      elitist  7.1982030E-04 feasible? T
+gen    300/16000      elitist  4.0183319E-04 feasible? T
+gen    300/16000      elitist  3.4225254E-04 feasible? T
+gen    400/16000      elitist  3.1776705E-04 feasible? T
+gen    400/16000      elitist  2.3581628E-04 feasible? T
+gen    500/16000      elitist  2.6958302E-04 feasible? T
+gen    500/16000      elitist  1.5940269E-04 feasible? T
+gen    600/16000      elitist  2.2259715E-04 feasible? T
+gen    600/16000      elitist  1.4288654E-04 feasible? T
+gen    700/16000      elitist  2.0508848E-04 feasible? T
+gen    700/16000      elitist  1.1008633E-04 feasible? T
+gen    800/16000      elitist  2.0140573E-04 feasible? T
+gen    800/16000      elitist  9.7910015E-05 feasible? T
+gen    900/16000      elitist  1.9986522E-04 feasible? T
+gen    900/16000      elitist  9.2890665E-05 feasible? T
+gen   1000/16000      elitist  1.9622787E-04 feasible? T
+gen   1000/16000      elitist  9.1287709E-05 feasible? T
+gen   1100/16000      elitist  1.8822610E-04 feasible? T
+gen   1100/16000      elitist  9.0125933E-05 feasible? T
+gen   1200/16000      elitist  1.8604278E-04 feasible? T
+gen   1200/16000      elitist  8.9560462E-05 feasible? T
+gen   1300/16000      elitist  1.8130488E-04 feasible? T
+gen   1300/16000      elitist  8.9203044E-05 feasible? T
+gen   1400/16000      elitist  1.7538629E-04 feasible? T
+gen   1400/16000      elitist  8.9098444E-05 feasible? T
+gen   1500/16000      elitist  1.7238969E-04 feasible? T
+gen   1500/16000      elitist  8.9037292E-05 feasible? T
+gen   1600/16000      elitist  1.7098956E-04 feasible? T
+gen   1600/16000      elitist  8.9015583E-05 feasible? T

@@ -1,0 +1,6 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** JOB 3483071 ON node76 CANCELLED AT 2021-10-20T07:30:33 ***
+srun: got SIGCONT
+srun: forcing job termination
+slurmstepd: error: *** STEP 3483071.0 ON node76 CANCELLED AT 2021-10-20T07:30:33 ***
+srun: error: node76: task 0: Terminated
