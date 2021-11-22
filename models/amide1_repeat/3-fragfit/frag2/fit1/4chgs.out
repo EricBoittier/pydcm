@@ -342,3 +342,28 @@ gen    800/8000      elitist  5.2951569E-04 feasible? T
 gen    900/8000      elitist  5.2946030E-04 feasible? T
 gen   1000/8000      elitist  5.2935002E-04 feasible? T
 gen   1100/8000      elitist  5.2933113E-04 feasible? T
+gen   1200/8000      elitist  5.2932787E-04 feasible? T
+gen   1300/8000      elitist  5.2932759E-04 feasible? T
+gen   1400/8000      elitist  5.2932754E-04 feasible? T
+population converged towards a single solution after 1434 generations.
+Starting local simplex optimization:
+Solution before refinement:      5.2932753946E-04
+ performing expansion, best =    5.2932753881569108E-004
+ performing expansion, best =    5.2932753866216512E-004
+ performing expansion, best =    5.2932753860374983E-004
+Exiting simplex optimization after   524 iterations
+Solution after  refinement:      5.2932753860E-04
+RMSE         5.293275386E-04 Hartree
+NEW BEST!
+
+Best found solution for 4 charges:
+        RMSE         3.321577944E-01 kcal/mol
+         MAE         2.345180947E-01 kcal/mol
+     max. AE         2.034071093E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+    -3.4877983    -1.0405972     0.2615893    -0.9680385
+    -3.6565155    -0.8513816     0.1736366     1.0000000
+     0.9504958    -2.9340289     0.0615779    -0.8293538
+     0.9922953    -3.0989938     0.0514337     0.9999989
+

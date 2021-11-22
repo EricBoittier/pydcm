@@ -1,0 +1,945 @@
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/amide1_test/ref/1_1_new-0.chk.p.cube"...
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/amide1_test/ref/1_1_new-0.chk.p.cube"...
+
+
+  mol.pdb Potential
+  mol.pdb Potential
+  Electrostatic potential from Total SCF Density
+  Electrostatic potential from Total SCF Density
+   12   -9.955504   -7.513236   -6.512752
+  102    0.200250    0.000000    0.000000
+   76    0.000000    0.200250    0.000000
+   66    0.000000    0.000000    0.200250
+    6    6.000000   -0.908958    0.280655    0.000342
+    6    6.000000   -3.442752   -1.000483    0.000000
+    7    7.000000    1.150813   -1.227893   -0.000144
+    6    6.000000    3.690134   -0.187521    0.000125
+    8    8.000000   -0.720887    2.593738   -0.000240
+    1    1.000000   -4.491836   -0.395695   -1.641581
+    1    1.000000   -3.314583   -3.036319   -0.007599
+    1    1.000000   -4.486047   -0.407878    1.649807
+    1    1.000000    0.935915   -3.080856   -0.001480
+    1    1.000000    5.027170   -1.725800    0.005467
+    1    1.000000    4.007247    0.964119   -1.652858
+    1    1.000000    4.002990    0.971880    1.648374
+   12   -9.955504   -7.513236   -6.512752
+  102    0.200250    0.000000    0.000000
+   76    0.000000    0.200250    0.000000
+   66    0.000000    0.000000    0.200250
+    6    6.000000   -0.908958    0.280655    0.000342
+    6    6.000000   -3.442752   -1.000483    0.000000
+    7    7.000000    1.150813   -1.227893   -0.000144
+    6    6.000000    3.690134   -0.187521    0.000125
+    8    8.000000   -0.720887    2.593738   -0.000240
+    1    1.000000   -4.491836   -0.395695   -1.641581
+    1    1.000000   -3.314583   -3.036319   -0.007599
+    1    1.000000   -4.486047   -0.407878    1.649807
+    1    1.000000    0.935915   -3.080856   -0.001480
+    1    1.000000    5.027170   -1.725800    0.005467
+    1    1.000000    4.007247    0.964119   -1.652858
+    1    1.000000    4.002990    0.971880    1.648374
+  3.87589E-03  3.90237E-03  3.92694E-03  3.94729E-03  3.96119E-03  3.96665E-03
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  3.44010E-03  3.45434E-03  3.46162E-03  3.46187E-03  3.45509E-03  3.44135E-03
+
+147272 out of 511632 gridpoints are considered ( 28.8%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+  3.87589E-03  3.90237E-03  3.92694E-03  3.94729E-03  3.96119E-03  3.96665E-03
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  3.44010E-03  3.45434E-03  3.46162E-03  3.46187E-03  3.45509E-03  3.44135E-03
+
+147272 out of 511632 gridpoints are considered ( 28.8%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+File "multipole8_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole8_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_4charges.xyz" already exists. Fitting procedure is skipped.
+Fragment fit detected
+Fitting to MTP grid, discarding reference MEP cube data
+Subsequent stats etc. are compared to MTP data, not the
+MEP from the reference cube file
+File "multipole4_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole4_4charges.xyz" already exists. Fitting procedure is skipped.
+Fragment fit detected
+Fitting to MTP grid, discarding reference MEP cube data
+Subsequent stats etc. are compared to MTP data, not the
+MEP from the reference cube file
+Total fragment charge (a.u.):         2.028240337E-01
+Running DE in parallel with 2 thread(s)!
+
+Starting fitting procedure for 4 charges, trial 1
+Total fragment charge (a.u.):         2.028240337E-01
+Running DE in parallel with 2 thread(s)!
+
+Starting fitting procedure for 4 charges, trial 1
+gen      0/8000      elitist  2.7284297E-03 feasible? T
+gen      0/8000      elitist  2.7284297E-03 feasible? T
+gen    100/8000      elitist  1.4629411E-03 feasible? T
+gen    100/8000      elitist  1.4563871E-03 feasible? T
+gen    200/8000      elitist  1.4297992E-03 feasible? T
+gen    200/8000      elitist  1.4280955E-03 feasible? T
+gen    300/8000      elitist  1.4243289E-03 feasible? T
+gen    300/8000      elitist  1.4266024E-03 feasible? T
+gen    400/8000      elitist  1.4265165E-03 feasible? T
+gen    400/8000      elitist  1.4229242E-03 feasible? T
+gen    500/8000      elitist  1.4225818E-03 feasible? T
+gen    500/8000      elitist  1.4264605E-03 feasible? T
+gen    600/8000      elitist  1.4264604E-03 feasible? T
+gen    600/8000      elitist  1.4225343E-03 feasible? T
+gen    700/8000      elitist  1.4264421E-03 feasible? T
+gen    700/8000      elitist  1.4224888E-03 feasible? T
+gen    800/8000      elitist  1.4264421E-03 feasible? T
+gen    800/8000      elitist  1.4224785E-03 feasible? T
+gen    900/8000      elitist  1.4264036E-03 feasible? T
+gen    900/8000      elitist  1.4224757E-03 feasible? T
+gen   1000/8000      elitist  1.4263454E-03 feasible? T
+gen   1000/8000      elitist  1.4222576E-03 feasible? T
+gen   1100/8000      elitist  1.4263343E-03 feasible? T
+gen   1100/8000      elitist  1.4222446E-03 feasible? T
+gen   1200/8000      elitist  1.4263313E-03 feasible? T
+gen   1200/8000      elitist  1.4222440E-03 feasible? T
+gen   1300/8000      elitist  1.4263155E-03 feasible? T
+gen   1300/8000      elitist  1.4222254E-03 feasible? T
+gen   1400/8000      elitist  1.4262840E-03 feasible? T
+gen   1400/8000      elitist  1.4222243E-03 feasible? T
+gen   1500/8000      elitist  1.4262715E-03 feasible? T
+gen   1500/8000      elitist  1.4222240E-03 feasible? T
+gen   1600/8000      elitist  1.4262661E-03 feasible? T
+gen   1600/8000      elitist  1.4222231E-03 feasible? T
+gen   1700/8000      elitist  1.4262610E-03 feasible? T
+gen   1700/8000      elitist  1.4222228E-03 feasible? T
+gen   1800/8000      elitist  1.4262605E-03 feasible? T
+gen   1800/8000      elitist  1.4222227E-03 feasible? T
+gen   1900/8000      elitist  1.4262584E-03 feasible? T
+gen   1900/8000      elitist  1.4222227E-03 feasible? T
+gen   2000/8000      elitist  1.4262570E-03 feasible? T
+gen   2000/8000      elitist  1.4222227E-03 feasible? T
+gen   2100/8000      elitist  1.4262568E-03 feasible? T
+gen   2100/8000      elitist  1.4222226E-03 feasible? T
+gen   2200/8000      elitist  1.4262533E-03 feasible? T
+gen   2200/8000      elitist  1.4222224E-03 feasible? T
+gen   2300/8000      elitist  1.4262531E-03 feasible? T
+gen   2300/8000      elitist  1.4222152E-03 feasible? T
+gen   2400/8000      elitist  1.4262519E-03 feasible? T
+gen   2400/8000      elitist  1.4222024E-03 feasible? T
+gen   2500/8000      elitist  1.4262509E-03 feasible? T
+gen   2500/8000      elitist  1.4221987E-03 feasible? T
+gen   2600/8000      elitist  1.4262470E-03 feasible? T
+gen   2600/8000      elitist  1.4221951E-03 feasible? T
+gen   2700/8000      elitist  1.4262462E-03 feasible? T
+gen   2700/8000      elitist  1.4221916E-03 feasible? T
+gen   2800/8000      elitist  1.4262460E-03 feasible? T
+gen   2800/8000      elitist  1.4221883E-03 feasible? T
+gen   2900/8000      elitist  1.4262459E-03 feasible? T
+gen   2900/8000      elitist  1.4221871E-03 feasible? T
+gen   3000/8000      elitist  1.4262459E-03 feasible? T
+gen   3000/8000      elitist  1.4221869E-03 feasible? T
+gen   3100/8000      elitist  1.4262459E-03 feasible? T
+gen   3100/8000      elitist  1.4221865E-03 feasible? T
+gen   3200/8000      elitist  1.4262417E-03 feasible? T
+gen   3200/8000      elitist  1.4221862E-03 feasible? T
+gen   3300/8000      elitist  1.4262352E-03 feasible? T
+gen   3300/8000      elitist  1.4221860E-03 feasible? T
+gen   3400/8000      elitist  1.4262343E-03 feasible? T
+gen   3400/8000      elitist  1.4221859E-03 feasible? T
+gen   3500/8000      elitist  1.4262342E-03 feasible? T
+gen   3500/8000      elitist  1.4221858E-03 feasible? T
+gen   3600/8000      elitist  1.4262341E-03 feasible? T
+gen   3600/8000      elitist  1.4221858E-03 feasible? T
+gen   3700/8000      elitist  1.4262338E-03 feasible? T
+gen   3700/8000      elitist  1.4221857E-03 feasible? T
+gen   3800/8000      elitist  1.4262337E-03 feasible? T
+gen   3800/8000      elitist  1.4221857E-03 feasible? T
+gen   3900/8000      elitist  1.4262324E-03 feasible? T
+gen   3900/8000      elitist  1.4221856E-03 feasible? T
+population converged towards a single solution after 3911 generations.
+Starting local simplex optimization:
+Solution before refinement:      1.4221856311E-03
+Exiting simplex optimization after   583 iterations
+Solution after  refinement:      1.4221856311E-03
+RMSE         1.422185631E-03 Hartree
+NEW BEST!
+
+Starting fitting procedure for 4 charges, trial 2
+gen      0/8000      elitist  1.8253324E-03 feasible? T
+gen   4000/8000      elitist  1.4262320E-03 feasible? T
+gen    100/8000      elitist  6.7932229E-04 feasible? T
+gen   4100/8000      elitist  1.4262315E-03 feasible? T
+gen    200/8000      elitist  6.2165655E-04 feasible? T
+gen   4200/8000      elitist  1.4262312E-03 feasible? T
+gen    300/8000      elitist  6.1691875E-04 feasible? T
+gen   4300/8000      elitist  1.4262304E-03 feasible? T
+gen    400/8000      elitist  6.1305103E-04 feasible? T
+gen   4400/8000      elitist  1.4262303E-03 feasible? T
+gen    500/8000      elitist  6.1230371E-04 feasible? T
+gen   4500/8000      elitist  1.4262302E-03 feasible? T
+gen    600/8000      elitist  6.1228614E-04 feasible? T
+gen   4600/8000      elitist  1.4262302E-03 feasible? T
+gen    700/8000      elitist  6.1227741E-04 feasible? T
+gen   4700/8000      elitist  1.4262302E-03 feasible? T
+gen    800/8000      elitist  6.1226686E-04 feasible? T
+gen   4800/8000      elitist  1.4262302E-03 feasible? T
+gen    900/8000      elitist  6.1225430E-04 feasible? T
+gen   4900/8000      elitist  1.4262302E-03 feasible? T
+gen   1000/8000      elitist  6.1224879E-04 feasible? T
+gen   5000/8000      elitist  1.4262302E-03 feasible? T
+gen   1100/8000      elitist  6.1223132E-04 feasible? T
+gen   5100/8000      elitist  1.4262302E-03 feasible? T
+gen   1200/8000      elitist  6.1222048E-04 feasible? T
+gen   5200/8000      elitist  1.4262302E-03 feasible? T
+gen   1300/8000      elitist  6.1221402E-04 feasible? T
+gen   5300/8000      elitist  1.4262302E-03 feasible? T
+gen   1400/8000      elitist  6.1220936E-04 feasible? T
+gen   5400/8000      elitist  1.4262302E-03 feasible? T
+gen   1500/8000      elitist  6.1220314E-04 feasible? T
+gen   5500/8000      elitist  1.4262302E-03 feasible? T
+gen   1600/8000      elitist  6.1219856E-04 feasible? T
+gen   5600/8000      elitist  1.4262302E-03 feasible? T
+gen   1700/8000      elitist  6.1219618E-04 feasible? T
+gen   5700/8000      elitist  1.4262302E-03 feasible? T
+gen   1800/8000      elitist  6.1219363E-04 feasible? T
+gen   5800/8000      elitist  1.4262302E-03 feasible? T
+gen   1900/8000      elitist  6.1219107E-04 feasible? T
+gen   5900/8000      elitist  1.4262302E-03 feasible? T
+gen   2000/8000      elitist  6.1218983E-04 feasible? T
+gen   6000/8000      elitist  1.4262301E-03 feasible? T
+gen   2100/8000      elitist  6.1218874E-04 feasible? T
+gen   6100/8000      elitist  1.4262301E-03 feasible? T
+gen   2200/8000      elitist  6.1218825E-04 feasible? T
+gen   6200/8000      elitist  1.4262301E-03 feasible? T
+gen   2300/8000      elitist  6.1218724E-04 feasible? T
+gen   6300/8000      elitist  1.4262300E-03 feasible? T
+gen   2400/8000      elitist  6.1218662E-04 feasible? T
+gen   6400/8000      elitist  1.4262297E-03 feasible? T
+gen   2500/8000      elitist  6.1218642E-04 feasible? T
+gen   6500/8000      elitist  1.4262296E-03 feasible? T
+gen   2600/8000      elitist  6.1218639E-04 feasible? T
+gen   6600/8000      elitist  1.4262292E-03 feasible? T
+gen   2700/8000      elitist  6.1218637E-04 feasible? T
+population converged towards a single solution after 2710 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.1218637405E-04
+ performing expansion, best =    6.1218637351290455E-004
+ performing expansion, best =    6.1218637327705371E-004
+ performing expansion, best =    6.1218637322573224E-004
+Exiting simplex optimization after   546 iterations
+Solution after  refinement:      6.1218637323E-04
+RMSE         6.121863732E-04 Hartree
+NEW BEST!
+
+Starting fitting procedure for 4 charges, trial 3
+gen      0/8000      elitist  1.4226070E-03 feasible? T
+gen   6700/8000      elitist  1.4262291E-03 feasible? T
+gen    100/8000      elitist  6.4573349E-04 feasible? T
+gen   6800/8000      elitist  1.4262291E-03 feasible? T
+gen    200/8000      elitist  6.1604804E-04 feasible? T
+gen   6900/8000      elitist  1.4262290E-03 feasible? T
+gen    300/8000      elitist  6.1287666E-04 feasible? T
+gen   7000/8000      elitist  1.4262290E-03 feasible? T
+gen    400/8000      elitist  6.1253228E-04 feasible? T
+gen   7100/8000      elitist  1.4262288E-03 feasible? T
+gen   7200/8000      elitist  1.4262288E-03 feasible? T
+gen    500/8000      elitist  6.1251588E-04 feasible? T
+gen    600/8000      elitist  6.1250374E-04 feasible? T
+gen   7300/8000      elitist  1.4262288E-03 feasible? T
+gen    700/8000      elitist  6.1238447E-04 feasible? T
+gen   7400/8000      elitist  1.4262288E-03 feasible? T
+gen    800/8000      elitist  6.1232280E-04 feasible? T
+gen   7500/8000      elitist  1.4262288E-03 feasible? T
+gen    900/8000      elitist  6.1228911E-04 feasible? T
+gen   7600/8000      elitist  1.4262288E-03 feasible? T
+gen   7700/8000      elitist  1.4262288E-03 feasible? T
+gen   1000/8000      elitist  6.1226304E-04 feasible? T
+gen   7800/8000      elitist  1.4262288E-03 feasible? T
+gen   1100/8000      elitist  6.1224225E-04 feasible? T
+gen   1200/8000      elitist  6.1223390E-04 feasible? T
+gen   7900/8000      elitist  1.4262288E-03 feasible? T
+gen   8000/8000      elitist  1.4262288E-03 feasible? T
+gen   1300/8000      elitist  6.1222395E-04 feasible? T
+Starting local simplex optimization:
+Solution before refinement:      1.4262288013E-03
+ performing expansion, best =    1.4262226263058861E-003
+ performing expansion, best =    1.4261916282426066E-003
+ performing expansion, best =    1.4261840659179766E-003
+ performing expansion, best =    1.4261764294768570E-003
+ performing expansion, best =    1.4261727855450403E-003
+ performing expansion, best =    1.4261715754658102E-003
+ performing expansion, best =    1.4261707308807926E-003
+ performing expansion, best =    1.4261699436101357E-003
+ performing expansion, best =    1.4261688935811915E-003
+ performing expansion, best =    1.4261686461589445E-003
+ performing expansion, best =    1.4261680533234834E-003
+ performing expansion, best =    1.4261670671986443E-003
+ performing expansion, best =    1.4261667123643500E-003
+ performing expansion, best =    1.4261663915278952E-003
+ performing expansion, best =    1.4261661677962523E-003
+ performing expansion, best =    1.4261652624530008E-003
+ performing expansion, best =    1.4261623954048095E-003
+ performing expansion, best =    1.4261619886035614E-003
+ performing expansion, best =    1.4261619129132008E-003
+ performing expansion, best =    1.4261616321689955E-003
+ performing expansion, best =    1.4261604552810165E-003
+ performing expansion, best =    1.4261602740400594E-003
+ performing expansion, best =    1.4261602473776252E-003
+ performing expansion, best =    1.4261601764609414E-003
+ performing expansion, best =    1.4261595636706420E-003
+ performing expansion, best =    1.4261592656360639E-003
+ performing expansion, best =    1.4261592034724036E-003
+ performing expansion, best =    1.4261588592352557E-003
+ performing expansion, best =    1.4261585746633690E-003
+ performing expansion, best =    1.4261584711775202E-003
+ performing expansion, best =    1.4261577262252797E-003
+ performing expansion, best =    1.4261576122413552E-003
+ performing expansion, best =    1.4261568488551390E-003
+ performing expansion, best =    1.4261566436372655E-003
+ performing expansion, best =    1.4261565397250874E-003
+ performing expansion, best =    1.4261556161475214E-003
+ performing expansion, best =    1.4261553591749072E-003
+ performing expansion, best =    1.4261548255893393E-003
+ performing expansion, best =    1.4261546110576407E-003
+ performing expansion, best =    1.4261545138238244E-003
+ performing expansion, best =    1.4261541118379113E-003
+ performing expansion, best =    1.4261538414421068E-003
+ performing expansion, best =    1.4261534207841570E-003
+ performing expansion, best =    1.4261533068873498E-003
+ performing expansion, best =    1.4261530261052849E-003
+ performing expansion, best =    1.4261527623261137E-003
+ performing expansion, best =    1.4261525549831232E-003
+ performing expansion, best =    1.4261525253378845E-003
+ performing expansion, best =    1.4261521725115293E-003
+ performing expansion, best =    1.4261521455335654E-003
+ performing expansion, best =    1.4261519380261885E-003
+ performing expansion, best =    1.4261518667189367E-003
+ performing expansion, best =    1.4261517894460340E-003
+ performing expansion, best =    1.4261517470503333E-003
+ performing expansion, best =    1.4261515928090029E-003
+ performing expansion, best =    1.4261515485199177E-003
+ performing expansion, best =    1.4261513492254722E-003
+ performing expansion, best =    1.4261512397512829E-003
+ performing expansion, best =    1.4261511521040213E-003
+ performing expansion, best =    1.4261511183700443E-003
+ performing expansion, best =    1.4261510872909352E-003
+ performing expansion, best =    1.4261510501044751E-003
+ performing expansion, best =    1.4261509946140874E-003
+ performing expansion, best =    1.4261509257247930E-003
+ performing expansion, best =    1.4261507705232068E-003
+ performing expansion, best =    1.4261507217289626E-003
+ performing expansion, best =    1.4261506624764176E-003
+ performing expansion, best =    1.4261506270544088E-003
+ performing expansion, best =    1.4261505823814605E-003
+ performing expansion, best =    1.4261504680411843E-003
+ performing expansion, best =    1.4261504288523225E-003
+ performing expansion, best =    1.4261504277013489E-003
+ performing expansion, best =    1.4261503103416783E-003
+ performing expansion, best =    1.4261501483763869E-003
+ performing expansion, best =    1.4261500949580717E-003
+ performing expansion, best =    1.4261500219921674E-003
+ performing expansion, best =    1.4261498111121783E-003
+ performing expansion, best =    1.4261495996728088E-003
+ performing expansion, best =    1.4261495422657597E-003
+ performing expansion, best =    1.4261495288530629E-003
+ performing expansion, best =    1.4261494898378201E-003
+ performing expansion, best =    1.4261494845779733E-003
+ performing expansion, best =    1.4261494529349643E-003
+ performing expansion, best =    1.4261494093051777E-003
+ performing expansion, best =    1.4261493828023981E-003
+ performing expansion, best =    1.4261493695906021E-003
+ performing expansion, best =    1.4261493666637040E-003
+ performing expansion, best =    1.4261493600087082E-003
+ performing expansion, best =    1.4261493141864224E-003
+ performing expansion, best =    1.4261492561003636E-003
+ performing expansion, best =    1.4261492343673108E-003
+ performing expansion, best =    1.4261491313948787E-003
+ performing expansion, best =    1.4261490158436650E-003
+ performing expansion, best =    1.4261488893004051E-003
+ performing expansion, best =    1.4261487777253036E-003
+ performing expansion, best =    1.4261487518734337E-003
+ performing expansion, best =    1.4261486119508371E-003
+ performing expansion, best =    1.4261486092408339E-003
+ performing expansion, best =    1.4261484476266028E-003
+ performing expansion, best =    1.4261482904708560E-003
+ performing expansion, best =    1.4261482824087653E-003
+ performing expansion, best =    1.4261481702853552E-003
+ performing expansion, best =    1.4261481370076807E-003
+ performing expansion, best =    1.4261480139668367E-003
+ performing expansion, best =    1.4261479945515047E-003
+ performing expansion, best =    1.4261479246748384E-003
+ performing expansion, best =    1.4261479018826684E-003
+ performing expansion, best =    1.4261478948721564E-003
+ performing expansion, best =    1.4261478502928114E-003
+ performing expansion, best =    1.4261478408421002E-003
+ performing expansion, best =    1.4261478247894154E-003
+ performing expansion, best =    1.4261477965649759E-003
+ performing expansion, best =    1.4261477783251830E-003
+ performing expansion, best =    1.4261477619449496E-003
+ performing expansion, best =    1.4261477464042873E-003
+ performing expansion, best =    1.4261477323869300E-003
+ performing expansion, best =    1.4261477247984598E-003
+ performing expansion, best =    1.4261477123469236E-003
+ performing expansion, best =    1.4261477031860823E-003
+ performing expansion, best =    1.4261477020935602E-003
+ performing expansion, best =    1.4261476962703261E-003
+ performing expansion, best =    1.4261476937399136E-003
+ performing expansion, best =    1.4261476805908985E-003
+ performing expansion, best =    1.4261476791527859E-003
+ performing expansion, best =    1.4261476759229251E-003
+ performing expansion, best =    1.4261476717723331E-003
+ performing expansion, best =    1.4261476717127724E-003
+ performing expansion, best =    1.4261476664428514E-003
+ performing expansion, best =    1.4261476514975883E-003
+ performing expansion, best =    1.4261476501187074E-003
+ performing expansion, best =    1.4261476462275548E-003
+ performing expansion, best =    1.4261476421035784E-003
+ performing expansion, best =    1.4261476420824256E-003
+ performing expansion, best =    1.4261476389313731E-003
+ performing expansion, best =    1.4261476354314347E-003
+ performing expansion, best =    1.4261476335912077E-003
+ performing expansion, best =    1.4261476325553755E-003
+ performing expansion, best =    1.4261476314474807E-003
+ performing expansion, best =    1.4261476313792299E-003
+ performing expansion, best =    1.4261476309871913E-003
+ performing expansion, best =    1.4261476289800811E-003
+ performing expansion, best =    1.4261476272579253E-003
+ performing expansion, best =    1.4261476212384700E-003
+ performing expansion, best =    1.4261476202519884E-003
+ performing expansion, best =    1.4261476198037483E-003
+ performing expansion, best =    1.4261476188366401E-003
+ performing expansion, best =    1.4261476183296611E-003
+ performing expansion, best =    1.4261476174597853E-003
+ performing expansion, best =    1.4261476158543137E-003
+ performing expansion, best =    1.4261476143352400E-003
+ performing expansion, best =    1.4261476142169919E-003
+ performing expansion, best =    1.4261476140398472E-003
+ performing expansion, best =    1.4261476134241593E-003
+ performing expansion, best =    1.4261476127741556E-003
+ performing expansion, best =    1.4261476126699870E-003
+ performing expansion, best =    1.4261476121215119E-003
+ performing expansion, best =    1.4261476116335238E-003
+ performing expansion, best =    1.4261476114253203E-003
+ performing expansion, best =    1.4261476109441009E-003
+ performing expansion, best =    1.4261476108435630E-003
+ performing expansion, best =    1.4261476103300274E-003
+ performing expansion, best =    1.4261476101187465E-003
+ performing expansion, best =    1.4261476097763561E-003
+ performing expansion, best =    1.4261476096456885E-003
+ performing expansion, best =    1.4261476090996433E-003
+ performing expansion, best =    1.4261476088796665E-003
+ performing expansion, best =    1.4261476079766050E-003
+ performing expansion, best =    1.4261476069368051E-003
+ performing expansion, best =    1.4261476059819549E-003
+ performing expansion, best =    1.4261476049370826E-003
+ performing expansion, best =    1.4261476035963123E-003
+ performing expansion, best =    1.4261476032603757E-003
+ performing expansion, best =    1.4261476018526248E-003
+ performing expansion, best =    1.4261476002774209E-003
+ performing expansion, best =    1.4261475983100944E-003
+ performing expansion, best =    1.4261475952584471E-003
+ performing expansion, best =    1.4261475923132156E-003
+ performing expansion, best =    1.4261475920563696E-003
+ performing expansion, best =    1.4261475883894201E-003
+ performing expansion, best =    1.4261475849856580E-003
+ performing expansion, best =    1.4261475846845161E-003
+ performing expansion, best =    1.4261475823285417E-003
+ performing expansion, best =    1.4261475811331026E-003
+ performing expansion, best =    1.4261475781533342E-003
+ performing expansion, best =    1.4261475732814356E-003
+ performing expansion, best =    1.4261475691183883E-003
+ performing expansion, best =    1.4261475680093000E-003
+ performing expansion, best =    1.4261475618813689E-003
+ performing expansion, best =    1.4261475561448760E-003
+ performing expansion, best =    1.4261475490363570E-003
+ performing expansion, best =    1.4261475419743966E-003
+ performing expansion, best =    1.4261475330314382E-003
+ performing expansion, best =    1.4261475251790220E-003
+ performing expansion, best =    1.4261475225140286E-003
+ performing expansion, best =    1.4261475219557501E-003
+ performing expansion, best =    1.4261475145531572E-003
+ performing expansion, best =    1.4261475039349721E-003
+ performing expansion, best =    1.4261474963361809E-003
+ performing expansion, best =    1.4261474885801204E-003
+ performing expansion, best =    1.4261474769792417E-003
+ performing expansion, best =    1.4261474658234369E-003
+ performing expansion, best =    1.4261474543749383E-003
+ performing expansion, best =    1.4261474363644840E-003
+ performing expansion, best =    1.4261474190743343E-003
+ performing expansion, best =    1.4261473956110175E-003
+ performing expansion, best =    1.4261473674084702E-003
+ performing expansion, best =    1.4261473384010984E-003
+ performing expansion, best =    1.4261473037513372E-003
+ performing expansion, best =    1.4261472800845773E-003
+ performing expansion, best =    1.4261472511910309E-003
+ performing expansion, best =    1.4261472186215009E-003
+ performing expansion, best =    1.4261471965688855E-003
+ performing expansion, best =    1.4261471600774318E-003
+ performing expansion, best =    1.4261471401443339E-003
+ performing expansion, best =    1.4261470931358402E-003
+ performing expansion, best =    1.4261470410091796E-003
+ performing expansion, best =    1.4261469830135533E-003
+ performing expansion, best =    1.4261469219906718E-003
+ performing expansion, best =    1.4261468323953648E-003
+ performing expansion, best =    1.4261467304303222E-003
+ performing expansion, best =    1.4261465928444837E-003
+ performing expansion, best =    1.4261464361080411E-003
+ performing expansion, best =    1.4261462153700511E-003
+ performing expansion, best =    1.4261461694786187E-003
+ performing expansion, best =    1.4261461596753837E-003
+ performing expansion, best =    1.4261461469833091E-003
+ performing expansion, best =    1.4261461125213051E-003
+ performing expansion, best =    1.4261459900623340E-003
+ performing expansion, best =    1.4261459542575770E-003
+ performing expansion, best =    1.4261459353251682E-003
+ performing expansion, best =    1.4261458543301814E-003
+ performing expansion, best =    1.4261457411845018E-003
+ performing expansion, best =    1.4261455658721020E-003
+ performing expansion, best =    1.4261455462427522E-003
+ performing expansion, best =    1.4261454016371525E-003
+ performing expansion, best =    1.4261452872965214E-003
+ performing expansion, best =    1.4261452303639852E-003
+ performing expansion, best =    1.4261452186082682E-003
+ performing expansion, best =    1.4261450921233439E-003
+ performing expansion, best =    1.4261448902369107E-003
+ performing expansion, best =    1.4261446300406931E-003
+ performing expansion, best =    1.4261446010471310E-003
+ performing expansion, best =    1.4261444765954450E-003
+ performing expansion, best =    1.4261442549764541E-003
+ performing expansion, best =    1.4261441836445449E-003
+ performing expansion, best =    1.4261441741822399E-003
+ performing expansion, best =    1.4261438667181004E-003
+ performing expansion, best =    1.4261435959059356E-003
+ performing expansion, best =    1.4261434328728549E-003
+ performing expansion, best =    1.4261432767857592E-003
+ performing expansion, best =    1.4261432608191793E-003
+ performing expansion, best =    1.4261432253408006E-003
+ performing expansion, best =    1.4261432142418005E-003
+ performing expansion, best =    1.4261431701365669E-003
+ performing expansion, best =    1.4261431591941012E-003
+ performing expansion, best =    1.4261431409386301E-003
+ performing expansion, best =    1.4261431317954666E-003
+ performing expansion, best =    1.4261431066959361E-003
+ performing expansion, best =    1.4261430405526749E-003
+ performing expansion, best =    1.4261430362334214E-003
+ performing expansion, best =    1.4261430264013322E-003
+ performing expansion, best =    1.4261429700801133E-003
+ performing expansion, best =    1.4261429288282429E-003
+ performing expansion, best =    1.4261428660065248E-003
+ performing expansion, best =    1.4261427932197167E-003
+ performing expansion, best =    1.4261427165583229E-003
+ performing expansion, best =    1.4261426364825516E-003
+ performing expansion, best =    1.4261425141536784E-003
+ performing expansion, best =    1.4261424871522485E-003
+ performing expansion, best =    1.4261423384638620E-003
+ performing expansion, best =    1.4261422218159771E-003
+ performing expansion, best =    1.4261421635758380E-003
+ performing expansion, best =    1.4261421380920391E-003
+ performing expansion, best =    1.4261420333521455E-003
+ performing expansion, best =    1.4261420325189826E-003
+ performing expansion, best =    1.4261420063922379E-003
+ performing expansion, best =    1.4261419803828987E-003
+ performing expansion, best =    1.4261419527529066E-003
+ performing expansion, best =    1.4261419456564413E-003
+ performing expansion, best =    1.4261419348823546E-003
+ performing expansion, best =    1.4261419161739567E-003
+ performing expansion, best =    1.4261419015326195E-003
+ performing expansion, best =    1.4261418718158623E-003
+ performing expansion, best =    1.4261418331665537E-003
+ performing expansion, best =    1.4261417783109861E-003
+ performing expansion, best =    1.4261417240673550E-003
+ performing expansion, best =    1.4261416571523945E-003
+ performing expansion, best =    1.4261416477151364E-003
+ performing expansion, best =    1.4261416017684000E-003
+ performing expansion, best =    1.4261415841158591E-003
+ performing expansion, best =    1.4261415610666967E-003
+ performing expansion, best =    1.4261414895862124E-003
+ performing expansion, best =    1.4261414671040884E-003
+ performing expansion, best =    1.4261414384945353E-003
+ performing expansion, best =    1.4261413769939865E-003
+ performing expansion, best =    1.4261413725385830E-003
+ performing expansion, best =    1.4261412773930711E-003
+ performing expansion, best =    1.4261412491277123E-003
+ performing expansion, best =    1.4261412480038947E-003
+ performing expansion, best =    1.4261412152434892E-003
+ performing expansion, best =    1.4261411798302326E-003
+ performing expansion, best =    1.4261411650263937E-003
+ performing expansion, best =    1.4261411517050892E-003
+ performing expansion, best =    1.4261411397318330E-003
+ performing expansion, best =    1.4261411043045629E-003
+ performing expansion, best =    1.4261410400019960E-003
+ performing expansion, best =    1.4261410399960162E-003
+ performing expansion, best =    1.4261410164598044E-003
+ performing expansion, best =    1.4261409815308731E-003
+ performing expansion, best =    1.4261409588166775E-003
+ performing expansion, best =    1.4261408981637014E-003
+ performing expansion, best =    1.4261408500659484E-003
+ performing expansion, best =    1.4261408475629842E-003
+ performing expansion, best =    1.4261408191185560E-003
+ performing expansion, best =    1.4261407814445399E-003
+ performing expansion, best =    1.4261407585386676E-003
+ performing expansion, best =    1.4261407500429915E-003
+ performing expansion, best =    1.4261407230735964E-003
+ performing expansion, best =    1.4261407193842731E-003
+ performing expansion, best =    1.4261407014062538E-003
+ performing expansion, best =    1.4261406937896225E-003
+ performing expansion, best =    1.4261406643382023E-003
+ performing expansion, best =    1.4261406187700487E-003
+ performing expansion, best =    1.4261405770067024E-003
+ performing expansion, best =    1.4261405433215872E-003
+ performing expansion, best =    1.4261405356406505E-003
+ performing expansion, best =    1.4261405036512004E-003
+ performing expansion, best =    1.4261404975323025E-003
+ performing expansion, best =    1.4261404718848515E-003
+ performing expansion, best =    1.4261404328121208E-003
+ performing expansion, best =    1.4261403909083654E-003
+ performing expansion, best =    1.4261403225249397E-003
+ performing expansion, best =    1.4261402567269795E-003
+ performing expansion, best =    1.4261402300723813E-003
+ performing expansion, best =    1.4261402213134400E-003
+ performing expansion, best =    1.4261402146799591E-003
+ performing expansion, best =    1.4261402144495139E-003
+ performing expansion, best =    1.4261401814142534E-003
+ performing expansion, best =    1.4261401789146845E-003
+ performing expansion, best =    1.4261401700551787E-003
+ performing expansion, best =    1.4261401448965767E-003
+ performing expansion, best =    1.4261401410830437E-003
+ performing expansion, best =    1.4261401037591326E-003
+ performing expansion, best =    1.4261400736874661E-003
+ performing expansion, best =    1.4261400339672307E-003
+ performing expansion, best =    1.4261400096868789E-003
+ performing expansion, best =    1.4261399709049626E-003
+ performing expansion, best =    1.4261399652834039E-003
+ performing expansion, best =    1.4261399635009133E-003
+ performing expansion, best =    1.4261399623896451E-003
+ performing expansion, best =    1.4261399553997236E-003
+ performing expansion, best =    1.4261399486220896E-003
+ performing expansion, best =    1.4261399450960998E-003
+ performing expansion, best =    1.4261399389782091E-003
+ performing expansion, best =    1.4261399388231309E-003
+ performing expansion, best =    1.4261399351127367E-003
+ performing expansion, best =    1.4261399296739527E-003
+ performing expansion, best =    1.4261399281699633E-003
+ performing expansion, best =    1.4261399264817543E-003
+ performing expansion, best =    1.4261399219300721E-003
+ performing expansion, best =    1.4261399214351774E-003
+ performing expansion, best =    1.4261399178052067E-003
+ performing expansion, best =    1.4261399114165218E-003
+ performing expansion, best =    1.4261399062324861E-003
+ performing expansion, best =    1.4261398947862495E-003
+ performing expansion, best =    1.4261398799809515E-003
+ performing expansion, best =    1.4261398630312663E-003
+ performing expansion, best =    1.4261398524370648E-003
+ performing expansion, best =    1.4261398346045531E-003
+ performing expansion, best =    1.4261398095602752E-003
+ performing expansion, best =    1.4261398080058032E-003
+ performing expansion, best =    1.4261398071136581E-003
+ performing expansion, best =    1.4261397860769304E-003
+ performing expansion, best =    1.4261397614023892E-003
+ performing expansion, best =    1.4261397603345285E-003
+ performing expansion, best =    1.4261397593498207E-003
+ performing expansion, best =    1.4261397545872853E-003
+ performing expansion, best =    1.4261397427771541E-003
+ performing expansion, best =    1.4261397375688266E-003
+ performing expansion, best =    1.4261397334547322E-003
+ performing expansion, best =    1.4261397320620966E-003
+ performing expansion, best =    1.4261397316093411E-003
+ performing expansion, best =    1.4261397237948609E-003
+ performing expansion, best =    1.4261397231681262E-003
+ performing expansion, best =    1.4261397127574155E-003
+ performing expansion, best =    1.4261397127004498E-003
+ performing expansion, best =    1.4261397077084666E-003
+ performing expansion, best =    1.4261397043086477E-003
+ performing expansion, best =    1.4261397028610325E-003
+ performing expansion, best =    1.4261397025604014E-003
+ performing expansion, best =    1.4261397010990288E-003
+ performing expansion, best =    1.4261396981093911E-003
+ performing expansion, best =    1.4261396977513206E-003
+ performing expansion, best =    1.4261396972262460E-003
+ performing expansion, best =    1.4261396958752089E-003
+ performing expansion, best =    1.4261396954417375E-003
+ performing expansion, best =    1.4261396946129855E-003
+ performing expansion, best =    1.4261396940148125E-003
+ performing expansion, best =    1.4261396935266060E-003
+ performing expansion, best =    1.4261396926009287E-003
+ performing expansion, best =    1.4261396910078654E-003
+ performing expansion, best =    1.4261396898070094E-003
+ performing expansion, best =    1.4261396881656565E-003
+ performing expansion, best =    1.4261396844108315E-003
+ performing expansion, best =    1.4261396817875761E-003
+ performing expansion, best =    1.4261396773199771E-003
+ performing expansion, best =    1.4261396740449354E-003
+ performing expansion, best =    1.4261396688765146E-003
+ performing expansion, best =    1.4261396630857127E-003
+ performing expansion, best =    1.4261396563735283E-003
+ performing expansion, best =    1.4261396522195129E-003
+ performing expansion, best =    1.4261396503527830E-003
+ performing expansion, best =    1.4261396442369983E-003
+ performing expansion, best =    1.4261396361848673E-003
+ performing expansion, best =    1.4261396334138560E-003
+ performing expansion, best =    1.4261396269631711E-003
+ performing expansion, best =    1.4261396262411903E-003
+ performing expansion, best =    1.4261396256340100E-003
+ performing expansion, best =    1.4261396243811391E-003
+ performing expansion, best =    1.4261396241729055E-003
+ performing expansion, best =    1.4261396235575585E-003
+ performing expansion, best =    1.4261396233041957E-003
+ performing expansion, best =    1.4261396232137060E-003
+Exiting simplex optimization after  2551 iterations
+Solution after  refinement:      1.4261396227E-03
+RMSE         1.426139623E-03 Hartree
+NEW BEST!
+
+Starting fitting procedure for 4 charges, trial 2
+gen      0/8000      elitist  1.8253324E-03 feasible? T
+gen   1400/8000      elitist  6.1222079E-04 feasible? T
+gen    100/8000      elitist  6.4008945E-04 feasible? T
+gen   1500/8000      elitist  6.1221361E-04 feasible? T
+gen    200/8000      elitist  6.1577847E-04 feasible? T
+gen   1600/8000      elitist  6.1220774E-04 feasible? T
+gen    300/8000      elitist  6.1453520E-04 feasible? T
+gen   1700/8000      elitist  6.1220275E-04 feasible? T
+gen    400/8000      elitist  6.1260259E-04 feasible? T
+gen   1800/8000      elitist  6.1219950E-04 feasible? T
+gen    500/8000      elitist  6.1256324E-04 feasible? T
+gen   1900/8000      elitist  6.1219638E-04 feasible? T
+gen    600/8000      elitist  6.1243500E-04 feasible? T
+gen   2000/8000      elitist  6.1219554E-04 feasible? T
+gen    700/8000      elitist  6.1231347E-04 feasible? T
+gen   2100/8000      elitist  6.1219366E-04 feasible? T
+gen    800/8000      elitist  6.1228029E-04 feasible? T
+gen   2200/8000      elitist  6.1219232E-04 feasible? T
+gen    900/8000      elitist  6.1225806E-04 feasible? T
+gen   2300/8000      elitist  6.1219026E-04 feasible? T
+gen   1000/8000      elitist  6.1225327E-04 feasible? T
+gen   2400/8000      elitist  6.1218928E-04 feasible? T
+gen   1100/8000      elitist  6.1223389E-04 feasible? T
+gen   2500/8000      elitist  6.1218846E-04 feasible? T
+gen   1200/8000      elitist  6.1222916E-04 feasible? T
+gen   2600/8000      elitist  6.1218780E-04 feasible? T
+gen   1300/8000      elitist  6.1222243E-04 feasible? T
+gen   2700/8000      elitist  6.1218744E-04 feasible? T
+gen   1400/8000      elitist  6.1221257E-04 feasible? T
+gen   2800/8000      elitist  6.1218679E-04 feasible? T
+gen   1500/8000      elitist  6.1220776E-04 feasible? T
+gen   2900/8000      elitist  6.1218639E-04 feasible? T
+gen   1600/8000      elitist  6.1220266E-04 feasible? T
+population converged towards a single solution after 2990 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.1218637441E-04
+ performing expansion, best =    6.1218637420540237E-004
+ performing expansion, best =    6.1218637399488305E-004
+ performing expansion, best =    6.1218637380268729E-004
+Exiting simplex optimization after   533 iterations
+Solution after  refinement:      6.1218637380E-04
+RMSE         6.121863738E-04 Hartree
+
+Starting fitting procedure for 4 charges, trial 4
+gen      0/8000      elitist  8.3710885E-04 feasible? T
+gen   1700/8000      elitist  6.1219971E-04 feasible? T
+gen    100/8000      elitist  6.3278695E-04 feasible? T
+gen   1800/8000      elitist  6.1219818E-04 feasible? T
+gen    200/8000      elitist  6.1473303E-04 feasible? T
+gen   1900/8000      elitist  6.1219624E-04 feasible? T
+gen    300/8000      elitist  6.1395604E-04 feasible? T
+gen   2000/8000      elitist  6.1219422E-04 feasible? T
+gen    400/8000      elitist  6.1239906E-04 feasible? T
+gen   2100/8000      elitist  6.1219345E-04 feasible? T
+gen    500/8000      elitist  6.1231116E-04 feasible? T
+gen   2200/8000      elitist  6.1219258E-04 feasible? T
+gen    600/8000      elitist  6.1229284E-04 feasible? T
+gen   2300/8000      elitist  6.1219119E-04 feasible? T
+gen    700/8000      elitist  6.1228299E-04 feasible? T
+gen   2400/8000      elitist  6.1219022E-04 feasible? T
+gen    800/8000      elitist  6.1225662E-04 feasible? T
+gen   2500/8000      elitist  6.1219003E-04 feasible? T
+population converged towards a single solution after 2544 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.1219001998E-04
+ performing expansion, best =    6.1218999915841959E-004
+ performing expansion, best =    6.1218999468120195E-004
+ performing expansion, best =    6.1218998150295027E-004
+ performing expansion, best =    6.1218997398595880E-004
+ performing expansion, best =    6.1218996983266152E-004
+ performing expansion, best =    6.1218996820095730E-004
+ performing expansion, best =    6.1218996693440685E-004
+ performing expansion, best =    6.1218996582652202E-004
+ performing expansion, best =    6.1218996306161740E-004
+ performing expansion, best =    6.1218996197389092E-004
+ performing expansion, best =    6.1218996129982367E-004
+ performing expansion, best =    6.1218996049325466E-004
+ performing expansion, best =    6.1218995964356802E-004
+ performing expansion, best =    6.1218995771479502E-004
+ performing expansion, best =    6.1218995722422953E-004
+ performing expansion, best =    6.1218995686023858E-004
+Exiting simplex optimization after   553 iterations
+Solution after  refinement:      6.1218995686E-04
+RMSE         6.121899569E-04 Hartree
+NEW BEST!
+
+Starting fitting procedure for 4 charges, trial 3
+gen      0/8000      elitist  1.4226070E-03 feasible? T
+gen    900/8000      elitist  6.1224606E-04 feasible? T
+gen    100/8000      elitist  8.0103190E-04 feasible? T
+gen   1000/8000      elitist  6.1223517E-04 feasible? T
+gen    200/8000      elitist  6.1443997E-04 feasible? T
+gen   1100/8000      elitist  6.1222738E-04 feasible? T
+gen    300/8000      elitist  6.1274567E-04 feasible? T
+gen   1200/8000      elitist  6.1221717E-04 feasible? T
+gen    400/8000      elitist  6.1243564E-04 feasible? T
+gen   1300/8000      elitist  6.1221112E-04 feasible? T
+gen    500/8000      elitist  6.1242552E-04 feasible? T
+gen   1400/8000      elitist  6.1220763E-04 feasible? T
+gen    600/8000      elitist  6.1238945E-04 feasible? T
+gen   1500/8000      elitist  6.1220331E-04 feasible? T
+gen    700/8000      elitist  6.1234027E-04 feasible? T
+gen   1600/8000      elitist  6.1220106E-04 feasible? T
+gen    800/8000      elitist  6.1230426E-04 feasible? T
+gen   1700/8000      elitist  6.1219724E-04 feasible? T
+gen    900/8000      elitist  6.1227727E-04 feasible? T
+gen   1800/8000      elitist  6.1219548E-04 feasible? T
+gen   1000/8000      elitist  6.1226114E-04 feasible? T
+gen   1900/8000      elitist  6.1219448E-04 feasible? T
+gen   1100/8000      elitist  6.1224026E-04 feasible? T
+gen   2000/8000      elitist  6.1219248E-04 feasible? T
+gen   2100/8000      elitist  6.1219088E-04 feasible? T
+gen   1200/8000      elitist  6.1223085E-04 feasible? T
+gen   2200/8000      elitist  6.1218973E-04 feasible? T
+gen   1300/8000      elitist  6.1221989E-04 feasible? T
+gen   2300/8000      elitist  6.1218871E-04 feasible? T
+gen   1400/8000      elitist  6.1221137E-04 feasible? T
+gen   2400/8000      elitist  6.1218758E-04 feasible? T
+gen   1500/8000      elitist  6.1220672E-04 feasible? T
+gen   2500/8000      elitist  6.1218682E-04 feasible? T
+gen   1600/8000      elitist  6.1220189E-04 feasible? T
+gen   2600/8000      elitist  6.1218639E-04 feasible? T
+gen   1700/8000      elitist  6.1219956E-04 feasible? T
+population converged towards a single solution after 2696 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.1218637993E-04
+ performing expansion, best =    6.1218637901124808E-004
+ performing expansion, best =    6.1218637891485449E-004
+ performing expansion, best =    6.1218637706462597E-004
+ performing expansion, best =    6.1218637648326408E-004
+ performing expansion, best =    6.1218637635276538E-004
+ performing expansion, best =    6.1218637631752426E-004
+Exiting simplex optimization after   536 iterations
+Solution after  refinement:      6.1218637632E-04
+RMSE         6.121863763E-04 Hartree
+
+Best found solution for 4 charges:
+        RMSE         3.841524608E-01 kcal/mol
+         MAE         2.672469512E-01 kcal/mol
+     max. AE         2.972526831E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+    -4.9097986    -0.1300955     1.9959223     0.9911963
+    -4.8923635    -0.0996256     1.9290451    -0.9999977
+     3.7502338     0.4606874    -0.0072795    -0.7883745
+     3.8690155     0.0033144    -0.0124145     1.0000000
+
+gen   1800/8000      elitist  6.1219665E-04 feasible? T
+gen   1900/8000      elitist  6.1219569E-04 feasible? T
+gen   2000/8000      elitist  6.1219385E-04 feasible? T
+gen   2100/8000      elitist  6.1219153E-04 feasible? T
+gen   2200/8000      elitist  6.1218948E-04 feasible? T
+gen   2300/8000      elitist  6.1218858E-04 feasible? T
+gen   2400/8000      elitist  6.1218790E-04 feasible? T
+gen   2500/8000      elitist  6.1218665E-04 feasible? T
+gen   2600/8000      elitist  6.1218639E-04 feasible? T
+population converged towards a single solution after 2671 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.1218637862E-04
+ performing expansion, best =    6.1218637795572197E-004
+ performing expansion, best =    6.1218637785762564E-004
+ performing expansion, best =    6.1218637778604628E-004
+ performing expansion, best =    6.1218637702634224E-004
+ performing expansion, best =    6.1218637658892131E-004
+ performing expansion, best =    6.1218637634780169E-004
+ performing expansion, best =    6.1218637624540280E-004
+Exiting simplex optimization after   536 iterations
+Solution after  refinement:      6.1218637625E-04
+RMSE         6.121863762E-04 Hartree
+NEW BEST!
+
+Starting fitting procedure for 4 charges, trial 4
+gen      0/8000      elitist  8.3710885E-04 feasible? T
+gen    100/8000      elitist  6.3165472E-04 feasible? T
+gen    200/8000      elitist  6.1766028E-04 feasible? T
+gen    300/8000      elitist  6.1365132E-04 feasible? T
+gen    400/8000      elitist  6.1312703E-04 feasible? T
+gen    500/8000      elitist  6.1266188E-04 feasible? T
+gen    600/8000      elitist  6.1258600E-04 feasible? T
+gen    700/8000      elitist  6.1241863E-04 feasible? T
+gen    800/8000      elitist  6.1236221E-04 feasible? T
+gen    900/8000      elitist  6.1234513E-04 feasible? T
+gen   1000/8000      elitist  6.1229345E-04 feasible? T
+gen   1100/8000      elitist  6.1226948E-04 feasible? T
+gen   1200/8000      elitist  6.1224974E-04 feasible? T
+gen   1300/8000      elitist  6.1223478E-04 feasible? T
+gen   1400/8000      elitist  6.1222400E-04 feasible? T
+gen   1500/8000      elitist  6.1221506E-04 feasible? T
+gen   1600/8000      elitist  6.1220835E-04 feasible? T
+gen   1700/8000      elitist  6.1220208E-04 feasible? T
+gen   1800/8000      elitist  6.1219931E-04 feasible? T
+gen   1900/8000      elitist  6.1219534E-04 feasible? T
+gen   2000/8000      elitist  6.1219301E-04 feasible? T
+gen   2100/8000      elitist  6.1219249E-04 feasible? T
+gen   2200/8000      elitist  6.1219074E-04 feasible? T
+gen   2300/8000      elitist  6.1218968E-04 feasible? T
+gen   2400/8000      elitist  6.1218903E-04 feasible? T
+gen   2500/8000      elitist  6.1218819E-04 feasible? T
+gen   2600/8000      elitist  6.1218738E-04 feasible? T
+gen   2700/8000      elitist  6.1218681E-04 feasible? T
+gen   2800/8000      elitist  6.1218645E-04 feasible? T
+population converged towards a single solution after 2885 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.1218638291E-04
+ performing expansion, best =    6.1218638140240166E-004
+ performing expansion, best =    6.1218638100198259E-004
+ performing expansion, best =    6.1218637985099606E-004
+ performing expansion, best =    6.1218637982084711E-004
+ performing expansion, best =    6.1218637978916824E-004
+ performing expansion, best =    6.1218637951287980E-004
+ performing expansion, best =    6.1218637937824705E-004
+Exiting simplex optimization after   557 iterations
+Solution after  refinement:      6.1218637938E-04
+RMSE         6.121863794E-04 Hartree
+
+Best found solution for 4 charges:
+        RMSE         3.841524627E-01 kcal/mol
+         MAE         2.672459161E-01 kcal/mol
+     max. AE         2.972306123E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+    -4.9098390    -0.1301053     1.9959622     0.9911594
+    -4.8924039    -0.0996365     1.9290835    -0.9999608
+     3.7502195     0.4607079    -0.0072879    -0.7883746
+     3.8690033     0.0033291    -0.0124209     1.0000000
+

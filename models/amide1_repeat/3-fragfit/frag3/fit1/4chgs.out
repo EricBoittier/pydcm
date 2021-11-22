@@ -572,3 +572,125 @@ Solution before refinement:      6.1235588613E-04
  performing expansion, best =    6.1235587631400365E-004
  performing expansion, best =    6.1235587607921544E-004
  performing expansion, best =    6.1235587589629698E-004
+Exiting simplex optimization after   550 iterations
+Solution after  refinement:      6.1235587529E-04
+RMSE         6.123558753E-04 Hartree
+
+Starting fitting procedure for 4 charges, trial 4
+gen      0/8000      elitist  2.0421089E-03 feasible? T
+gen   1300/8000      elitist  6.1221653E-04 feasible? T
+gen    100/8000      elitist  1.4324771E-03 feasible? T
+gen   1400/8000      elitist  6.1221018E-04 feasible? T
+gen    200/8000      elitist  1.4234240E-03 feasible? T
+gen   1500/8000      elitist  6.1220507E-04 feasible? T
+gen    300/8000      elitist  1.4230399E-03 feasible? T
+gen   1600/8000      elitist  6.1220246E-04 feasible? T
+gen    400/8000      elitist  1.4227711E-03 feasible? T
+gen   1700/8000      elitist  6.1219885E-04 feasible? T
+gen    500/8000      elitist  1.4226169E-03 feasible? T
+gen   1800/8000      elitist  6.1219521E-04 feasible? T
+gen    600/8000      elitist  1.4225511E-03 feasible? T
+gen   1900/8000      elitist  6.1219317E-04 feasible? T
+gen    700/8000      elitist  1.4224776E-03 feasible? T
+gen   2000/8000      elitist  6.1219176E-04 feasible? T
+gen    800/8000      elitist  1.4224423E-03 feasible? T
+gen   2100/8000      elitist  6.1219015E-04 feasible? T
+gen    900/8000      elitist  1.4223444E-03 feasible? T
+gen   2200/8000      elitist  6.1218923E-04 feasible? T
+gen   1000/8000      elitist  1.4222018E-03 feasible? T
+gen   2300/8000      elitist  6.1218812E-04 feasible? T
+gen   1100/8000      elitist  1.4221881E-03 feasible? T
+gen   2400/8000      elitist  6.1218714E-04 feasible? T
+gen   1200/8000      elitist  1.4221875E-03 feasible? T
+gen   2500/8000      elitist  6.1218639E-04 feasible? T
+gen   1300/8000      elitist  1.4221872E-03 feasible? T
+gen   2600/8000      elitist  6.1218618E-04 feasible? T
+population converged towards a single solution after 1369 generations.
+Starting local simplex optimization:
+Solution before refinement:      1.4221871436E-03
+ performing expansion, best =    1.4221871079096518E-003
+ performing expansion, best =    1.4221871038019461E-003
+ performing expansion, best =    1.4221870904892969E-003
+ performing expansion, best =    1.4221870873567357E-003
+ performing expansion, best =    1.4221870853078802E-003
+ performing expansion, best =    1.4221870852640466E-003
+ performing expansion, best =    1.4221870849604260E-003
+ performing expansion, best =    1.4221870847981831E-003
+ performing expansion, best =    1.4221870845770159E-003
+ performing expansion, best =    1.4221870844679360E-003
+Exiting simplex optimization after   531 iterations
+Solution after  refinement:      1.4221870845E-03
+RMSE         1.422187084E-03 Hartree
+
+Best found solution for 4 charges:
+        RMSE         8.924351952E-01 kcal/mol
+         MAE         2.672462384E-01 kcal/mol
+     max. AE         2.972689409E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+    -4.9096735    -0.1300365     1.9960079     0.9911915
+    -4.8922340    -0.0995667     1.9291300    -0.9999940
+     3.7502391     0.4606911    -0.0073116    -0.7883738
+     3.8690167     0.0033166    -0.0124391     1.0000000
+
+population converged towards a single solution after 2644 generations.
+Starting local simplex optimization:
+Solution before refinement:      6.1218617657E-04
+ performing expansion, best =    6.1218617600514169E-004
+ performing expansion, best =    6.1218617522050154E-004
+ performing expansion, best =    6.1218617444988186E-004
+ performing expansion, best =    6.1218617439526052E-004
+ performing expansion, best =    6.1218617436640719E-004
+ performing expansion, best =    6.1218617408230730E-004
+ performing expansion, best =    6.1218617408004055E-004
+Exiting simplex optimization after   565 iterations
+Solution after  refinement:      6.1218617408E-04
+RMSE         6.121861741E-04 Hartree
+
+Starting fitting procedure for 4 charges, trial 4
+gen      0/8000      elitist  3.1797405E-03 feasible? T
+gen    100/8000      elitist  1.4823748E-03 feasible? T
+gen    200/8000      elitist  1.4273028E-03 feasible? T
+gen    300/8000      elitist  1.4232987E-03 feasible? T
+gen    400/8000      elitist  1.4224338E-03 feasible? T
+gen    500/8000      elitist  1.4222096E-03 feasible? T
+gen    600/8000      elitist  1.4221996E-03 feasible? T
+gen    700/8000      elitist  1.4221989E-03 feasible? T
+gen    800/8000      elitist  1.4221988E-03 feasible? T
+gen    900/8000      elitist  1.4221969E-03 feasible? T
+gen   1000/8000      elitist  1.4221929E-03 feasible? T
+gen   1100/8000      elitist  1.4221890E-03 feasible? T
+gen   1200/8000      elitist  1.4221875E-03 feasible? T
+gen   1300/8000      elitist  1.4221873E-03 feasible? T
+gen   1400/8000      elitist  1.4221870E-03 feasible? T
+gen   1500/8000      elitist  1.4221869E-03 feasible? T
+gen   1600/8000      elitist  1.4221864E-03 feasible? T
+gen   1700/8000      elitist  1.4221862E-03 feasible? T
+gen   1800/8000      elitist  1.4221861E-03 feasible? T
+gen   1900/8000      elitist  1.4221860E-03 feasible? T
+gen   2000/8000      elitist  1.4221859E-03 feasible? T
+gen   2100/8000      elitist  1.4221859E-03 feasible? T
+gen   2200/8000      elitist  1.4221859E-03 feasible? T
+gen   2300/8000      elitist  1.4221858E-03 feasible? T
+population converged towards a single solution after 2331 generations.
+Starting local simplex optimization:
+Solution before refinement:      1.4221858433E-03
+ performing expansion, best =    1.4221858432145818E-003
+ performing expansion, best =    1.4221858429549468E-003
+ performing expansion, best =    1.4221858428727151E-003
+ performing expansion, best =    1.4221858427451270E-003
+Exiting simplex optimization after   607 iterations
+Solution after  refinement:      1.4221858427E-03
+RMSE         1.422185843E-03 Hartree
+
+Best found solution for 4 charges:
+        RMSE         8.924344160E-01 kcal/mol
+         MAE         2.672464934E-01 kcal/mol
+     max. AE         2.972488741E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+    -4.9097977    -0.1300818     1.9959392     0.9911720
+    -4.8923617    -0.0996121     1.9290604    -0.9999737
+     3.7502189     0.4606857    -0.0072844    -0.7883746
+     3.8690028     0.0033128    -0.0124180     1.0000000
+

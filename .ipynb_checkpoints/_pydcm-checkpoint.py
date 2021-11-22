@@ -184,7 +184,7 @@ SBATCH_ATOMFIT = '''#!/bin/bash
 
 #SBATCH --job-name=atom%i
 #SBATCH --nodes=1
-#SBATCH --ntasks=2
+#SBATCH --ntasks=16
 #SBATCH --partition=%s
 
 WORKDIR=%s
@@ -205,7 +205,7 @@ SBATCH_FRAGFIT = '''#!/bin/bash
 
 #SBATCH --job-name=frag%ifit%iq%i
 #SBATCH --nodes=1
-#SBATCH --ntasks=2
+#SBATCH --ntasks=16
 #SBATCH --partition=%s
 
 WORKDIR=%s
@@ -229,7 +229,7 @@ SBATCH_REFINE = '''#!/bin/bash
 
 #SBATCH --job-name=refine-%ichg
 #SBATCH --nodes=1
-#SBATCH --ntasks=2
+#SBATCH --ntasks=4
 #SBATCH --partition=%s
 
 cd %s
@@ -710,14 +710,17 @@ class Pydcm:
                 for k in range(self.minFChg[i], self.maxFChg[i] + 1):
                     jobid.append(0)
                     finished[i][j].append(0)
+                    
                 if os.path.isfile('jobIDs'):
                     jf = open('jobIDs', 'r')
                     for line in jf.readlines():
                         a = line.split()
                         jobid[int(a[0]) - 1] = int(a[1])
                     jf.close()
+                    
                 for k in range(self.minFChg[i], self.maxFChg[i] + 1):
                     status = 0  # 0=not started / crashed, 1=running, 2=finished
+                    
                     # case 1: job is still running
                     if jobid[k - self.minFChg[i]] != 0:
                         status = 1
@@ -749,9 +752,13 @@ class Pydcm:
                             print('Job ' + str(jobid[k - self.minFChg[i]]) + ' has crashed, resubmitting')
                             rmfile = str(k) + 'chgs.xyz'
                             sout = subprocess.run(['rm', '-f', rmfile], stdout=subprocess.PIPE)
+                            
                     if status != 0:
                         continue
+                    
+                    
                     # case 3: job has crashed or hasn't started
+                    total_status = False
                     f = open(str(k) + 'chgs.sh', 'w')
                     f.write(SBATCH_FRAGFIT % (i + 1, j + 1, k, self.longQ, self.fragdir + frag + '/fit' + str(j + 1),
                                               self.bindir, self.refdir, self.mtpfile, self.potCube,
@@ -766,6 +773,7 @@ class Pydcm:
                     jf = open('jobIDs', 'a')
                     jf.write(str(k - self.minFChg[i] + 1) + ' ' + str(jobid[k - self.minFChg[i]]) + '\n')
                     jf.close()
+                    
                 os.chdir(self.fragdir + frag)
             os.chdir(self.fragdir)
         

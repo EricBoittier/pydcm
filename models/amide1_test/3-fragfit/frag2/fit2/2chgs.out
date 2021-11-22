@@ -1,0 +1,241 @@
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/amide1_test/ref/1_1_new-0.chk.p.cube"...
+Running in fitting mode
+
+Reading "/home/boittier/pydcm/models/amide1_test/ref/1_1_new-0.chk.p.cube"...
+
+
+  mol.pdb Potential
+  Electrostatic potential from Total SCF Density
+   12   -9.955504   -7.513236   -6.512752
+  102    0.200250    0.000000    0.000000
+   76    0.000000    0.200250    0.000000
+   66    0.000000    0.000000    0.200250
+    6    6.000000   -0.908958    0.280655    0.000342
+    6    6.000000   -3.442752   -1.000483    0.000000
+    7    7.000000    1.150813   -1.227893   -0.000144
+    6    6.000000    3.690134   -0.187521    0.000125
+    8    8.000000   -0.720887    2.593738   -0.000240
+    1    1.000000   -4.491836   -0.395695   -1.641581
+    1    1.000000   -3.314583   -3.036319   -0.007599
+    1    1.000000   -4.486047   -0.407878    1.649807
+    1    1.000000    0.935915   -3.080856   -0.001480
+    1    1.000000    5.027170   -1.725800    0.005467
+    1    1.000000    4.007247    0.964119   -1.652858
+    1    1.000000    4.002990    0.971880    1.648374
+  mol.pdb Potential
+  Electrostatic potential from Total SCF Density
+   12   -9.955504   -7.513236   -6.512752
+  102    0.200250    0.000000    0.000000
+   76    0.000000    0.200250    0.000000
+   66    0.000000    0.000000    0.200250
+    6    6.000000   -0.908958    0.280655    0.000342
+    6    6.000000   -3.442752   -1.000483    0.000000
+    7    7.000000    1.150813   -1.227893   -0.000144
+    6    6.000000    3.690134   -0.187521    0.000125
+    8    8.000000   -0.720887    2.593738   -0.000240
+    1    1.000000   -4.491836   -0.395695   -1.641581
+    1    1.000000   -3.314583   -3.036319   -0.007599
+    1    1.000000   -4.486047   -0.407878    1.649807
+    1    1.000000    0.935915   -3.080856   -0.001480
+    1    1.000000    5.027170   -1.725800    0.005467
+    1    1.000000    4.007247    0.964119   -1.652858
+    1    1.000000    4.002990    0.971880    1.648374
+  4.64281E-03  4.64570E-03  4.64576E-03  4.64301E-03  4.52576E-03  4.53952E-03
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  3.06398E-02  2.98639E-02  3.08933E-02  3.21620E-02  3.22801E-02  3.10298E-02
+
+128372 out of 511632 gridpoints are considered ( 25.1%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+  4.64281E-03  4.64570E-03  4.64576E-03  4.64301E-03  4.52576E-03  4.53952E-03
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+       .            .            .            .            .            .
+  3.06398E-02  2.98639E-02  3.08933E-02  3.21620E-02  3.22801E-02  3.10298E-02
+
+128372 out of 511632 gridpoints are considered ( 25.1%).
+
+...done!
+
+
+
+
+USING GREEDY MODE
+File "multipole2_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole2_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_1charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_2charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_3charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_4charges.xyz" already exists. Fitting procedure is skipped.
+File "multipole9_4charges.xyz" already exists. Fitting procedure is skipped.
+Fragment fit detected
+Fitting to MTP grid, discarding reference MEP cube data
+Subsequent stats etc. are compared to MTP data, not the
+MEP from the reference cube file
+Fragment fit detected
+Fitting to MTP grid, discarding reference MEP cube data
+Subsequent stats etc. are compared to MTP data, not the
+MEP from the reference cube file
+Total fragment charge (a.u.):         2.026064687E-01
+Running DE in parallel with 2 thread(s)!
+
+Starting fitting procedure for 2 charges, trial 1
+Total fragment charge (a.u.):         2.026064687E-01
+Running DE in parallel with 2 thread(s)!
+
+Starting fitting procedure for 2 charges, trial 1
+gen      0/4000      elitist  3.5064008E-03 feasible? T
+gen      0/4000      elitist  3.5064008E-03 feasible? T
+gen    100/4000      elitist  2.6901355E-03 feasible? T
+gen    100/4000      elitist  2.7396115E-03 feasible? T
+gen    200/4000      elitist  2.6216510E-03 feasible? T
+gen    200/4000      elitist  2.7130541E-03 feasible? T
+gen    300/4000      elitist  2.5714451E-03 feasible? T
+gen    300/4000      elitist  2.5689296E-03 feasible? T
+gen    400/4000      elitist  2.5714451E-03 feasible? T
+gen    400/4000      elitist  2.5677417E-03 feasible? T
+gen    500/4000      elitist  2.5699925E-03 feasible? T
+gen    500/4000      elitist  2.5622754E-03 feasible? T
+gen    600/4000      elitist  2.5670910E-03 feasible? T
+gen    600/4000      elitist  2.5589851E-03 feasible? T
+gen    700/4000      elitist  2.5582225E-03 feasible? T
+gen    700/4000      elitist  2.5568472E-03 feasible? T
+gen    800/4000      elitist  2.5568077E-03 feasible? T
+gen    800/4000      elitist  2.5567724E-03 feasible? T
+gen    900/4000      elitist  2.5567585E-03 feasible? T
+gen    900/4000      elitist  2.5567586E-03 feasible? T
+gen   1000/4000      elitist  2.5567573E-03 feasible? T
+gen   1000/4000      elitist  2.5567573E-03 feasible? T
+population converged towards a single solution after 1094 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572965E-03
+population converged towards a single solution after 1091 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572970E-03
+ performing expansion, best =    2.5567572964007492E-003
+Exiting simplex optimization after   279 iterations
+Solution after  refinement:      2.5567572964E-03
+RMSE         2.556757296E-03 Hartree
+NEW BEST!
+
+Starting fitting procedure for 2 charges, trial 2
+gen      0/4000      elitist  3.4850835E-03 feasible? T
+Exiting simplex optimization after   277 iterations
+Solution after  refinement:      2.5567572970E-03
+RMSE         2.556757297E-03 Hartree
+NEW BEST!
+
+Starting fitting procedure for 2 charges, trial 2
+gen      0/4000      elitist  3.4850835E-03 feasible? T
+gen    100/4000      elitist  2.6045038E-03 feasible? T
+gen    100/4000      elitist  2.5763634E-03 feasible? T
+gen    200/4000      elitist  2.5570899E-03 feasible? T
+gen    200/4000      elitist  2.5567987E-03 feasible? T
+gen    300/4000      elitist  2.5567578E-03 feasible? T
+gen    300/4000      elitist  2.5567574E-03 feasible? T
+population converged towards a single solution after 384 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572957E-03
+population converged towards a single solution after 386 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572963E-03
+Exiting simplex optimization after   270 iterations
+Solution after  refinement:      2.5567572957E-03
+RMSE         2.556757296E-03 Hartree
+NEW BEST!
+
+Starting fitting procedure for 2 charges, trial 3
+gen      0/4000      elitist  3.1678855E-03 feasible? T
+Exiting simplex optimization after   274 iterations
+Solution after  refinement:      2.5567572963E-03
+RMSE         2.556757296E-03 Hartree
+NEW BEST!
+
+Starting fitting procedure for 2 charges, trial 3
+gen      0/4000      elitist  3.1678855E-03 feasible? T
+gen    100/4000      elitist  2.5978054E-03 feasible? T
+gen    100/4000      elitist  2.5659246E-03 feasible? T
+gen    200/4000      elitist  2.5568201E-03 feasible? T
+gen    200/4000      elitist  2.5568182E-03 feasible? T
+gen    300/4000      elitist  2.5567577E-03 feasible? T
+gen    300/4000      elitist  2.5567576E-03 feasible? T
+gen    400/4000      elitist  2.5567573E-03 feasible? T
+population converged towards a single solution after 406 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572959E-03
+gen    400/4000      elitist  2.5567573E-03 feasible? T
+Exiting simplex optimization after   280 iterations
+Solution after  refinement:      2.5567572959E-03
+RMSE         2.556757296E-03 Hartree
+
+Starting fitting procedure for 2 charges, trial 4
+gen      0/4000      elitist  3.1116946E-03 feasible? T
+population converged towards a single solution after 409 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572963E-03
+Exiting simplex optimization after   284 iterations
+Solution after  refinement:      2.5567572963E-03
+RMSE         2.556757296E-03 Hartree
+NEW BEST!
+
+Starting fitting procedure for 2 charges, trial 4
+gen      0/4000      elitist  3.1116946E-03 feasible? T
+gen    100/4000      elitist  2.5588485E-03 feasible? T
+gen    100/4000      elitist  2.5589499E-03 feasible? T
+gen    200/4000      elitist  2.5567590E-03 feasible? T
+gen    200/4000      elitist  2.5567634E-03 feasible? T
+gen    300/4000      elitist  2.5567573E-03 feasible? T
+population converged towards a single solution after 306 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572958E-03
+Exiting simplex optimization after   298 iterations
+Solution after  refinement:      2.5567572958E-03
+RMSE         2.556757296E-03 Hartree
+
+Best found solution for 2 charges:
+        RMSE         1.604388214E+00 kcal/mol
+         MAE         1.263284785E+00 kcal/mol
+     max. AE         7.639515309E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+    -4.0175227    -0.1981196    -0.4154037     0.0630288
+     1.3965009    -3.6681867    -0.1209526     0.1395777
+
+gen    300/4000      elitist  2.5567573E-03 feasible? T
+population converged towards a single solution after 330 generations.
+Starting local simplex optimization:
+Solution before refinement:      2.5567572960E-03
+ performing expansion, best =    2.5567572957497487E-003
+ performing expansion, best =    2.5567572957334783E-003
+Exiting simplex optimization after   285 iterations
+Solution after  refinement:      2.5567572957E-03
+RMSE         2.556757296E-03 Hartree
+NEW BEST!
+
+Best found solution for 2 charges:
+        RMSE         1.604388214E+00 kcal/mol
+         MAE         1.263285101E+00 kcal/mol
+     max. AE         7.639521059E+00 kcal/mol
+
+       x[bohr]       y[bohr]       z[bohr]          q[e]
+    -4.0175321    -0.1981223    -0.4153959     0.0630285
+     1.3965038    -3.6681855    -0.1209472     0.1395780
+

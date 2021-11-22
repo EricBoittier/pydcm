@@ -1,0 +1,6 @@
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: got SIGCONT
+slurmstepd: error: *** JOB 3600513 ON node62 CANCELLED AT 2021-11-05T16:47:06 ***
+srun: forcing job termination
+slurmstepd: error: *** STEP 3600513.0 ON node62 CANCELLED AT 2021-11-05T16:47:06 ***
+srun: error: node62: tasks 0-1: Terminated
