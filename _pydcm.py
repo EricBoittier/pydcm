@@ -735,6 +735,7 @@ class Pydcm:
                                     status = 2  # finished (probably...)
                                     finished[i][j][k - self.minFChg[i]] = 1
                         xyzfile = str(k) + 'charges.xyz'
+
                         if not os.path.isfile(
                                 xyzfile):  # job finished, log file ok but somehow one or more xyz files are missing
                             status = 0
@@ -742,15 +743,17 @@ class Pydcm:
                             print('Job ' + str(jobid[k - self.minFChg[i]]) + ' has crashed, resubmitting')
                             rmfile = str(k) + 'chgs.xyz'
                             sout = subprocess.run(['rm', '-f', rmfile], stdout=subprocess.PIPE)
+                            total_status = False
 
                     else:
                         # case 3: job has crashed or hasn't started
                         total_status = False
 
                         f = open(str(k) + 'chgs.sh', 'w')
-                        f.write(SBATCH_FRAGFIT % (i + 1, j + 1, k, self.longQ, self.fragdir + frag + '/fit' + str(j + 1),
-                                                  self.bindir, self.refdir, self.mtpfile, self.potCube,
-                                                  self.densCube, self.ntry, fragstr, k, k, k, self.maxAChg))
+                        f.write(
+                            SBATCH_FRAGFIT % (i + 1, j + 1, k, self.longQ, self.fragdir + frag + '/fit' + str(j + 1),
+                                              self.bindir, self.refdir, self.mtpfile, self.potCube,
+                                              self.densCube, self.ntry, fragstr, k, k, k, self.maxAChg))
                         f.close()
 
                         sout = subprocess.run(['sbatch', '--parsable', '{}chgs.sh'.format(k)], stdout=subprocess.PIPE)
@@ -802,8 +805,6 @@ class Pydcm:
                         of.close()
                         print("Frag " + str(i + 1) + ", Fit " + str(j + 1) + ", " + str(k) + " charges, RMSE: " + str(
                             self.rmse[i][j][l]) + " kcal/mol")
-
-
 
     def combine_fragements(self, ntry, nfit):
         Path(self.combdir).mkdir(parents=True, exist_ok=True)
