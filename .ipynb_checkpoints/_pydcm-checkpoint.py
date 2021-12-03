@@ -184,7 +184,7 @@ SBATCH_ATOMFIT = '''#!/bin/bash
 
 #SBATCH --job-name=atom%i
 #SBATCH --nodes=1
-#SBATCH --ntasks=16
+#SBATCH --ntasks=4
 #SBATCH --partition=%s
 
 WORKDIR=%s
@@ -205,7 +205,7 @@ SBATCH_FRAGFIT = '''#!/bin/bash
 
 #SBATCH --job-name=frag%ifit%iq%i
 #SBATCH --nodes=1
-#SBATCH --ntasks=16
+#SBATCH --ntasks=4
 #SBATCH --partition=%s
 
 WORKDIR=%s

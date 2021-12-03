@@ -1,0 +1,85 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+    </head>
+    <body>
+      <script src="https://prakt.chemie.unibas.ch/~devereux/ngl-master/dist/ngl.js"></script>
+    <!--  <script src="https://unpkg.com/ngl"></script>-->
+      <script>
+        var densFile = 'http://localhost:8885/ref/co2.chk.d.cube'
+        var espFile = 'http://localhost:8885/ref/co2.chk.p.cube'
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var stage = new NGL.Stage("viewport");
+
+          Promise.all([
+            stage.loadFile(densFile),
+            stage.loadFile(espFile)
+          ]).then(function(comp) {
+            var densComp = comp[0]
+            var espComp = comp[1]
+
+
+            densComp.addRepresentation("surface",{isolevel: "  0.0010",
+                                                  isolevelType: 'value',
+                                                  opacity: 0.95,
+                                                  side: 'front',
+                                                  colorScheme: 'volume',
+                                                  colorVolume: espComp.volume,
+                                                  colorScale: [ 0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff ],
+                                                  colorMode: 'rgb',
+                                                  colorDomain: [  -0.0451,   0.0451 ]
+                                                  });
+            stage.autoView();
+            stage.viewerControls.zoom(-0.5);
+          } );
+        });
+
+        var densFile2 = 'http://localhost:8885/ref/co2.chk.d.cube'
+        var espFile2 = 'http://localhost:8885/1-mtpfit/ditriantapole_expansion.cube'
+
+        document.addEventListener("DOMContentLoaded", function () {
+          var stage2 = new NGL.Stage("viewport2");
+
+          Promise.all([
+            stage2.loadFile(densFile2),
+            stage2.loadFile(espFile2)
+          ]).then(function(comp2) {
+            var densComp2 = comp2[0]
+            var espComp2 = comp2[1]
+
+
+            densComp2.addRepresentation("surface",{isolevel: "  0.0010",
+                                                  isolevelType: 'value',
+                                                  opacity: 0.95,
+                                                  side: 'front',
+                                                  colorScheme: 'volume',
+                                                  colorVolume: espComp2.volume,
+                                                  colorScale: [ 0xff0000, 0xffff00, 0x00ff00, 0x00ffff, 0x0000ff ],
+                                                  colorMode: 'rgb',
+                                                  colorDomain: [  -0.0451,   0.0451 ]
+                                                  });
+            stage2.autoView();
+            stage2.viewerControls.zoom(-0.5);
+          } );
+        });
+      </script>
+      <h3>NGL Cube File Visualization</h3>
+      <table><tr><td>
+      <div id="viewport" style="width:500px; height:500px;"></div><br><p>ESP from ref/co2.chk.p.cube</p>
+      </td><td>
+      <div id="viewport2" style="width:500px; height:500px;"></div><br><p>ESP from 1-mtpfit/ditriantapole_expansion.cube</p>
+      </td></tr></table>
+      <table cellpadding="5">
+      <tr><td><b>Measure</b></td><td><b>RMSE[kcal/mol/e]</b></td><td><b>MaxError[kcal/mol/e]</b></td><td><b>NPoints</b></td></tr>
+      <tr><td><b>Total                        </b></td><td>  0.189</td><td>  1.390</td><td>444848</td></tr>
+      <tr><td><b>Close  (  1.20 < r <   1.66 )</b></td><td>  0.395</td><td>  1.390</td><td>94888</td></tr>
+      <tr><td><b>Mid-range ( 1.66 < r <  2.20)</b></td><td>  0.074</td><td>  0.200</td><td>170775</td></tr>
+      <tr><td><b>Far-range ( 2.20 < r        )</b></td><td>  0.028</td><td>  0.072</td><td>179185</td></tr>
+      </table>
+      <h2><br>ESP Slice Data (ESP and Errors in each plane)<br></h2>
+      <img src="http://localhost:8885/1-mtpfit/comparison.png" alt="Slice Data" style="width:1020px;">
+    </body>
+    </html>
