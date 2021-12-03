@@ -725,8 +725,8 @@ class Pydcm:
                                 jobid[k - self.minFChg[i]]) + ' is still running')
                             total_status = False
 
-                            # case 2: output exists and job has finished or crashed
-                    if os.path.isfile(str(k) + 'chgs.sh') and status == 0:
+                    # case 2: output exists and job has finished or crashed
+                    elif os.path.isfile(str(k) + 'chgs.sh') and status == 0:
                         sf = open(str(k) + 'chgs.out', 'r')
                         for line in sf.readlines():
                             a = line.split()
@@ -743,23 +743,24 @@ class Pydcm:
                             rmfile = str(k) + 'chgs.xyz'
                             sout = subprocess.run(['rm', '-f', rmfile], stdout=subprocess.PIPE)
 
+                    else:
+                        # case 3: job has crashed or hasn't started
+                        total_status = False
 
-                    # case 3: job has crashed or hasn't started
-                    total_status = False
-                    f = open(str(k) + 'chgs.sh', 'w')
-                    f.write(SBATCH_FRAGFIT % (i + 1, j + 1, k, self.longQ, self.fragdir + frag + '/fit' + str(j + 1),
-                                              self.bindir, self.refdir, self.mtpfile, self.potCube,
-                                              self.densCube, self.ntry, fragstr, k, k, k, self.maxAChg))
-                    f.close()
+                        f = open(str(k) + 'chgs.sh', 'w')
+                        f.write(SBATCH_FRAGFIT % (i + 1, j + 1, k, self.longQ, self.fragdir + frag + '/fit' + str(j + 1),
+                                                  self.bindir, self.refdir, self.mtpfile, self.potCube,
+                                                  self.densCube, self.ntry, fragstr, k, k, k, self.maxAChg))
+                        f.close()
 
-                    sout = subprocess.run(['sbatch', '--parsable', '{}chgs.sh'.format(k)], stdout=subprocess.PIPE)
-                    #             print("printing stdout: ", sout, str(sout.stdout.decode('utf-8')))
+                        sout = subprocess.run(['sbatch', '--parsable', '{}chgs.sh'.format(k)], stdout=subprocess.PIPE)
+                        #             print("printing stdout: ", sout, str(sout.stdout.decode('utf-8')))
 
-                    jobid[k - self.minFChg[i]] = int(str(sout.stdout.decode('utf-8')).rstrip())
-                    print('submitted jobID ' + str(jobid[k - self.minFChg[i]]))
-                    jf = open('jobIDs', 'a')
-                    jf.write(str(k - self.minFChg[i] + 1) + ' ' + str(jobid[k - self.minFChg[i]]) + '\n')
-                    jf.close()
+                        jobid[k - self.minFChg[i]] = int(str(sout.stdout.decode('utf-8')).rstrip())
+                        print('submitted jobID ' + str(jobid[k - self.minFChg[i]]))
+                        jf = open('jobIDs', 'a')
+                        jf.write(str(k - self.minFChg[i] + 1) + ' ' + str(jobid[k - self.minFChg[i]]) + '\n')
+                        jf.close()
 
                 os.chdir(self.fragdir + frag)
             os.chdir(self.fragdir)
