@@ -235,21 +235,20 @@ SBATCH_REFINE = '''#!/bin/bash
 cd %s
 
 %s/pcubefit.x -xyz %s %s -simplex -esp %s -dens %s -nacmax %i -ntry %i -v > %i-charges.out
-            ''' 
-
+            '''
 
 
 class Pydcm:
-    def __init__(self, projDir, refBinDir, refDensCube, refPotCube, webPort, frags, 
+    def __init__(self, projDir, refBinDir, refDensCube, refPotCube, webPort, frags,
                  minFChg, maxFChg, maxAChg, minMChg, maxMChg, shortQ, longQ):
         self.projDir = projDir
         self.refBinDir = refBinDir
         self.refDensCube = refDensCube
         self.refPotCube = refPotCube
-        
+
         self.minMChg = minMChg
         self.maxMChg = maxMChg
-        
+
         self.longQ = longQ
         self.shortQ = shortQ
 
@@ -276,11 +275,10 @@ class Pydcm:
         self.anadir = self.workdir + '6-analysis/'
 
         self.isoSurf = 0.001
-        
+
         self.rmse = []
         self.maxErr = []
         self.npts = []
-
 
         self.natm = 0
         self.coords = []
@@ -332,7 +330,7 @@ class Pydcm:
 
         print(f'{self.natm} atoms in molecule')
 
-        print(f'writing PDB file {self.pdbfile}\n' )
+        print(f'writing PDB file {self.pdbfile}\n')
         pf = open(self.pdbfile, 'w')
         pf.write('REMARK: FILE AUTOMATICALLY GENERATED FROM ' + self.densCube + '\n')
         for i in range(0, self.natm):
@@ -347,21 +345,21 @@ class Pydcm:
         f = open(self.htmldir + htmlF, "w")
         f.write(
             VIS2_STR % (
-            self.webPort, densF1, self.webPort, potF1, self.isoSurf, -self.maxESP, self.maxESP,
-            self.webPort, densF2, self.webPort, potF2, self.isoSurf,
-            -self.maxESP, self.maxESP, potF1, potF2,
-            rmse[0],
-            maxErr[0],
-            npts[0],
-            rmse[1],
-            maxErr[1],
-            npts[1],
-            rmse[2],
-            maxErr[2],
-            npts[2],
-            rmse[3],
-            maxErr[3],
-            npts[3], self.webPort, imgFile)
+                self.webPort, densF1, self.webPort, potF1, self.isoSurf, -self.maxESP, self.maxESP,
+                self.webPort, densF2, self.webPort, potF2, self.isoSurf,
+                -self.maxESP, self.maxESP, potF1, potF2,
+                rmse[0],
+                maxErr[0],
+                npts[0],
+                rmse[1],
+                maxErr[1],
+                npts[1],
+                rmse[2],
+                maxErr[2],
+                npts[2],
+                rmse[3],
+                maxErr[3],
+                npts[3], self.webPort, imgFile)
         )
         f.close()
 
@@ -375,6 +373,7 @@ class Pydcm:
             raise FileNotFoundError
 
         bindir = self.bindir
+
         def run_http():
             script = bindir + 'simple-cors-http-server.py'
             if not os.path.isfile(script):
@@ -389,7 +388,6 @@ class Pydcm:
         print("Web server running in directory " + cwd + ", URLs are relative to this path")
         print("If you change the project directory, you need to restart Jupyter-Lab to restart this server "
               "and create a new root for URLs")
-
 
     def show_ref_models(self, isoSurf=0.001):
         # Get range of ESP values from reference CUBE files
@@ -413,8 +411,10 @@ class Pydcm:
         print("ESP range: -" + str(self.maxESP) + " to " + str(self.maxESP) + " a.u.")
 
         f = open(self.htmldir + "refESP.html", "w")
-        f.write(VIS1_STR % (self.webPort, os.path.basename(self.densCube), self.webPort, os.path.basename(self.potCube), self.webPort, os.path.basename(self.pdbfile),
-               isoSurf, -self.maxESP, self.maxESP, self.potCube)
+        f.write(VIS1_STR % (
+            self.webPort, os.path.basename(self.densCube), self.webPort, os.path.basename(self.potCube), self.webPort,
+            os.path.basename(self.pdbfile),
+            isoSurf, -self.maxESP, self.maxESP, self.potCube)
                 )
         f.close()
         print(self.webPort, self.htmldir, self.pdbfile)
@@ -423,7 +423,6 @@ class Pydcm:
         print(url)
 
         return IPython.display.IFrame(src=url, width='1120', height='750')
-
 
     def display_mtpfit_comparison(self, isoSurf=0.001):
 
@@ -445,8 +444,9 @@ class Pydcm:
         if not os.path.isfile(self.mtpfile):
             eFile = open("py_err.log", "w")
             oFile = open("py_out.log", "w")
-            subprocess.run(['python', script, '-pot', self.potCube, '-dens', self.densCube, '-lmax', '5', '-qtot', str(self.qtot)],
-                           stdout=oFile, stderr=eFile)
+            subprocess.run(
+                ['python', script, '-pot', self.potCube, '-dens', self.densCube, '-lmax', '5', '-qtot', str(self.qtot)],
+                stdout=oFile, stderr=eFile)
 
         # Generate a cube file to visualize the multipolar ESP and compare to the reference ESP
         script = self.bindir + 'pcubefit.x'
@@ -480,11 +480,11 @@ class Pydcm:
             logFile = open('analyze-mtpl-cube.log', 'w')
             errFile = open('errlog2', 'w')
             subprocess.run \
-                ([script, '-v', '-analysis', '-esp', self.potCube, '-esp2', 'ditriantapole_expansion.cube', '-dens', self.densCube]
+                ([script, '-v', '-analysis', '-esp', self.potCube, '-esp2', 'ditriantapole_expansion.cube', '-dens',
+                  self.densCube]
                  , stdout=logFile, stderr=errFile)
             logFile.close()
             errFile.close()
-
 
         logFile = open('analyze-mtpl-cube.log', 'r')
         for line in logFile:
@@ -509,9 +509,10 @@ class Pydcm:
 
         os.chdir(self.workdir)
 
-        self.writeNGLHTML('mtpFit.html', 'ref/' + os.path.basename(self.densCube), 'ref/' + os.path.basename(self.potCube),
-                     'ref/' + os.path.basename(self.densCube), '1-mtpfit/ditriantapole_expansion.cube',
-                     self.rmse, self.maxErr, self.npts, '1-mtpfit/comparison.png')
+        self.writeNGLHTML('mtpFit.html', 'ref/' + os.path.basename(self.densCube),
+                          'ref/' + os.path.basename(self.potCube),
+                          'ref/' + os.path.basename(self.densCube), '1-mtpfit/ditriantapole_expansion.cube',
+                          self.rmse, self.maxErr, self.npts, '1-mtpfit/comparison.png')
 
         # generate a URL and display in an iframe
         url = 'http://localhost:' + self.webPort + '/html/mtpFit.html'
@@ -549,7 +550,7 @@ class Pydcm:
             for line in jf.readlines():
                 a = line.split()
                 jobid[int(a[0]) - 1] = int(a[1])
-                
+
         total_status = True
         for i in range(1, self.natm + 1):
             scripts.append('atom' + str(i) + '.sh')
@@ -601,8 +602,8 @@ class Pydcm:
             jf = open('jobIDs', 'a')
             jf.write(str(i) + ' ' + str(jobid[i - 1]) + '\n')
             jf.close()
-            
-        if total_status == False:
+
+        if not total_status:
             return False
 
         # now show results for finished atoms
@@ -632,7 +633,6 @@ class Pydcm:
             labl.append(self.coords[i][0] + str(i + 1))
         fig, ax = plt.subplots(figsize=(1200 * px, 800 * px))
         X = np.arange(self.natm)
-        ax = fig.add_axes([0, 0, 1, 1])
         w = 1.0 / (maxAChg + 1)
 
         for i in range(0, maxAChg):
@@ -644,28 +644,15 @@ class Pydcm:
                     alpha=0.8,
                     color=col,
                     label=str(i + 1) + ' chgs')
-
         plt.xlabel('Atom')
         plt.ylabel('RMSE (kcal/mol)')
         plt.xticks(X + w, labl)
         plt.legend()
         plt.title('RMSE of atom fits')
 
-        fig.canvas.toolbar_visible = False
-        fig.canvas.header_visible = False  # Hide the Figure name at the top of the figure
-        fig.canvas.footer_visible = False
-        fig.canvas.resizable = False
-        fig.canvas.capture_scroll = True
-        fig.canvas.toolbar_visible = True
-
-
     def fit_fragments(self, ntry, nfit):
-        
-        
-        
         Path(self.fragdir).mkdir(parents=True, exist_ok=True)
         finished = []
-
         try:
             os.chdir(self.fragdir)
         except FileNotFoundError:
@@ -706,35 +693,38 @@ class Pydcm:
                         except:
                             print("Could not copy " + self.atomdir + tmp + " to " + fitdir)
                             raise FileNotFoundError
+
                 jobid = []
                 for k in range(self.minFChg[i], self.maxFChg[i] + 1):
                     jobid.append(0)
                     finished[i][j].append(0)
-                    
+
                 if os.path.isfile('jobIDs'):
                     jf = open('jobIDs', 'r')
                     for line in jf.readlines():
                         a = line.split()
                         jobid[int(a[0]) - 1] = int(a[1])
                     jf.close()
-                    
+
                 for k in range(self.minFChg[i], self.maxFChg[i] + 1):
                     status = 0  # 0=not started / crashed, 1=running, 2=finished
-                    
+
                     # case 1: job is still running
                     if jobid[k - self.minFChg[i]] != 0:
                         status = 1
                         try:
-                            sout = subprocess.run(['squeue', '-j', str(jobid[k - self.minFChg[i]])], stdout=subprocess.PIPE)
+                            sout = subprocess.run(['squeue', '-j', str(jobid[k - self.minFChg[i]])],
+                                                  stdout=subprocess.PIPE)
                             if str(jobid[k - self.minFChg[i]]) not in sout.stdout.decode('utf-8').rstrip():
                                 status = 0
                         except subprocess.CalledProcessError as e:
                             status = 0
                         if status == 1:
-                            print('Frag ' + str(i + 1) + ' fit ' + str(j + 1) + ', ' + str(k + 1) + ' charges: Job ' + str(
+                            print('Frag ' + str(i + 1) + ' fit ' + str(j + 1) + ', ' + str(
+                                k + 1) + ' charges: Job ' + str(
                                 jobid[k - self.minFChg[i]]) + ' is still running')
                             total_status = False
-                            
+
                             # case 2: output exists and job has finished or crashed
                     if os.path.isfile(str(k) + 'chgs.sh') and status == 0:
                         sf = open(str(k) + 'chgs.out', 'r')
@@ -752,17 +742,14 @@ class Pydcm:
                             print('Job ' + str(jobid[k - self.minFChg[i]]) + ' has crashed, resubmitting')
                             rmfile = str(k) + 'chgs.xyz'
                             sout = subprocess.run(['rm', '-f', rmfile], stdout=subprocess.PIPE)
-                            
-                    if status != 0:
-                        continue
-                    
-                    
+
+
                     # case 3: job has crashed or hasn't started
                     total_status = False
                     f = open(str(k) + 'chgs.sh', 'w')
                     f.write(SBATCH_FRAGFIT % (i + 1, j + 1, k, self.longQ, self.fragdir + frag + '/fit' + str(j + 1),
                                               self.bindir, self.refdir, self.mtpfile, self.potCube,
-                       self.densCube, self.ntry, fragstr, k, k, k, self.maxAChg))
+                                              self.densCube, self.ntry, fragstr, k, k, k, self.maxAChg))
                     f.close()
 
                     sout = subprocess.run(['sbatch', '--parsable', '{}chgs.sh'.format(k)], stdout=subprocess.PIPE)
@@ -773,13 +760,14 @@ class Pydcm:
                     jf = open('jobIDs', 'a')
                     jf.write(str(k - self.minFChg[i] + 1) + ' ' + str(jobid[k - self.minFChg[i]]) + '\n')
                     jf.close()
-                    
+
                 os.chdir(self.fragdir + frag)
             os.chdir(self.fragdir)
-        
-        if total_status==False:
+
+        if not total_status:
+            print("Jobs did not finish successfully")
             return False
-        
+
         # PROCESS RESULTS
         os.chdir(self.fragdir)
         self.rmse = []
@@ -814,34 +802,10 @@ class Pydcm:
                         print("Frag " + str(i + 1) + ", Fit " + str(j + 1) + ", " + str(k) + " charges, RMSE: " + str(
                             self.rmse[i][j][l]) + " kcal/mol")
 
-        # PLOT FIGURES
-        # Plot figure(s) with Matplotlib - one for each fit
-        px = 1 / plt.rcParams['figure.dpi']  # pixel in inches
-        cols = ['tab:blue', 'tab:orange', 'tab:green', 'tab:red', 'tab:purple', 'tab:brown', 'tab:pink', 'tab:gray',
-                'tab:olive', 'tab:cyan']
-        labl = []
-        nfrag = len(self.frags)
-        nbin = 0
-        for i in range(1, nfrag ): # + 1
-            labl.append(str(i))
-            if (self.maxFChg[i - 1] + 1 - self.minFChg[i - 1]) > nbin:
-                nbin = self.maxFChg[i] + 1 - self.minFChg[i]
-        for j in range(0, nfit):
-            fig, ax = plt.subplots(figsize=(1200 * px, 800 * px))
-            X = np.arange(self.nfrag)
-            ax = fig.add_axes([0, 0, 1, 1])
-            w = 1.0 / (nbin + 1)
-            for i in range(0, nbin):
-                if i > 9:
-                    col = 'tab:blue'
-                    
-        plt.show()
 
 
     def combine_fragements(self, ntry, nfit):
-
         Path(self.combdir).mkdir(parents=True, exist_ok=True)
-
         try:
             os.chdir(self.combdir)
         except FileNotFoundError:
@@ -852,23 +816,24 @@ class Pydcm:
         # total number of charges
         def findCombinationsUtil(arr, index, num,
                                  reducedNum, nfrag, minfragchgs, maxfragchgs, pf):
-            if (reducedNum < 0):
+            if reducedNum < 0:
                 return
-            if (reducedNum == 0):
-                if (index == nfrag):
+            if reducedNum == 0:
+                if index == nfrag:
                     # check that all solutions are within minchgs and maxchgs
                     for i in range(index):
-                        if not (arr[i] >= minfragchgs[i] and arr[i] <= maxfragchgs[i]):
-                            return
+                        if minfragchgs[i] <= arr[i] <= maxfragchgs[i]:
+                            continue
+                        return
                     for i in range(index):
                         pf.write(str(arr[i]) + " ");
                     pf.write("\n")
                 return
-            if (index > nfrag):  # discard solutions that require too many fragments
+            if index > nfrag:  # discard solutions that require too many fragments
                 return
 
             # Find the previous number stored in arr[].
-            prev = 1 if (index == 0) else arr[index - 1];
+            prev = 1 if (index == 0) else arr[index - 1]
 
             # note loop starts from previous number i.e. at array location index - 1
             # for k in range(prev, num + 1):
@@ -1032,14 +997,12 @@ class Pydcm:
           </script>
         </body>
         </html>
-        ''' % (self.webPort)
-                )
+        ''' % self.webPort)
         f.close()
 
         # generate a URL and open in an iframe
         url = 'http://localhost:' + self.webPort + '/html/combXYZ.html'
         IPython.display.IFrame(src=url, width='1120', height='1250')
-
 
     def refine_models(self, MINNTRY=1, MAXNTRY=1):
 
@@ -1116,7 +1079,7 @@ class Pydcm:
             Path(subdir).mkdir(parents=True, exist_ok=True)
             subfile = subdir + str(i) + "-charges.sh"
             sf = open(subfile, "w")
-            sf.write(SBATCH_REFINE % (i, self.longQ, subdir, self.bindir, xyzfile, self.mtpfile, self.potCube, 
+            sf.write(SBATCH_REFINE % (i, self.longQ, subdir, self.bindir, xyzfile, self.mtpfile, self.potCube,
                                       self.densCube, self.maxAChg, ntry, i))
             sf.close()
             sout = subprocess.run(['sbatch', '--parsable', subfile], stdout=subprocess.PIPE)
@@ -1125,10 +1088,10 @@ class Pydcm:
             jf = open('jobIDs', 'a')
             jf.write(str(i - self.minMChg + 1) + ' ' + str(jobid[i - self.minMChg]) + '\n')
             jf.close()
-        
+
         if total_status == False:
             return False
-        
+
         # PROCESS RESULTS
         rmse = []
         mae = []
@@ -1305,7 +1268,6 @@ class Pydcm:
         url = 'http://localhost:' + self.webPort + '/html/refinedXYZ.html'
         IPython.display.IFrame(src=url, width='1120', height='1050')
 
-
     def analyse_model(self, nchg, isoSurf=0.001):
 
         Path(self.anadir).mkdir(parents=True, exist_ok=True)
@@ -1368,8 +1330,9 @@ class Pydcm:
         # Run Least-Squares fit of atomic multipoles to ESP in reference cube file
         chgfile = chgdir + 'fitted-mtpl.dat'
         if not os.path.isfile(chgfile):
-            subprocess.run(['python', script, '-pot', self.potCube, '-dens', self.densCube, '-lmax', '0', '-qtot', str(self.qtot)],
-                           stdout=PIPE, stderr=PIPE)
+            subprocess.run(
+                ['python', script, '-pot', self.potCube, '-dens', self.densCube, '-lmax', '0', '-qtot', str(self.qtot)],
+                stdout=PIPE, stderr=PIPE)
 
         # Generate a cube file to visualize the monopolar ESP and compare to the reference ESP
         script = self.bindir + 'pcubefit.x'
@@ -1445,8 +1408,10 @@ class Pydcm:
         if not os.path.isfile('quadrupole_expansion.cube'):
             logFile = open('fitted-quad-cube.log', 'w')
             errFile = open('errlog', 'w')
-            subprocess.run([script, '-v', '-generate', '-multipole', '-esp', self.potCube, '-dens', self.densCube, '-xyz', quadfile],
-                           stdout=logFile, stderr=errFile)
+            subprocess.run(
+                [script, '-v', '-generate', '-multipole', '-esp', self.potCube, '-dens', self.densCube, '-xyz',
+                 quadfile],
+                stdout=logFile, stderr=errFile)
             logFile.close()
             errFile.close()
 
@@ -1455,7 +1420,8 @@ class Pydcm:
             logFile = open('analyze-quad-cube.log', 'w')
             errFile = open('errlog2', 'w')
             subprocess.run(
-                [script, '-v', '-analysis', '-esp', self.potCube, '-esp2', 'quadrupole_expansion.cube', '-dens', self.densCube],
+                [script, '-v', '-analysis', '-esp', self.potCube, '-esp2', 'quadrupole_expansion.cube', '-dens',
+                 self.densCube],
                 stdout=logFile, stderr=errFile)
             logFile.close()
             errFile.close()
@@ -1498,7 +1464,8 @@ class Pydcm:
         if not os.path.isfile(str(nchg) + 'charges.cube'):
             logFile = open(str(nchg) + '-cube.log', 'w')
             errFile = open('errlog', 'w')
-            subprocess.run([script, '-v', '-generate', '-esp', self.potCube, '-dens', self.densCube, '-xyz', xyzfile], stdout=logFile,
+            subprocess.run([script, '-v', '-generate', '-esp', self.potCube, '-dens', self.densCube, '-xyz', xyzfile],
+                           stdout=logFile,
                            stderr=errFile)
             logFile.close()
             errFile.close()
@@ -1518,7 +1485,8 @@ class Pydcm:
             logFile = open('analyze-mdcm-cube.log', 'w')
             errFile = open('errlog2', 'w')
             subprocess.run(
-                [script, '-v', '-analysis', '-esp', self.potCube, '-esp2', str(nchg) + 'charges.cube', '-dens', self.densCube],
+                [script, '-v', '-analysis', '-esp', self.potCube, '-esp2', str(nchg) + 'charges.cube', '-dens',
+                 self.densCube],
                 stdout=logFile, stderr=errFile)
             logFile.close()
             errFile.close()
@@ -1661,7 +1629,8 @@ class Pydcm:
 
             for i in range(0, len(cubeFiles)):
                 f.write(
-                    '    <input type="radio" id="cube1_%i" name="cubeF1" value="%i" onclick="loadCube1(%i);"' % (i, i, i))
+                    '    <input type="radio" id="cube1_%i" name="cubeF1" value="%i" onclick="loadCube1(%i);"' % (
+                        i, i, i))
                 if i == 0:
                     f.write('checked="checked"')
                 f.write('>\n    <label for="cube1_%i">%s</label><br>\n''' % (i, cubeFiles[i]))
@@ -1673,7 +1642,8 @@ class Pydcm:
             f.write('\n    </td><td>\n')
             for i in range(0, len(cubeFiles)):
                 f.write(
-                    '    <input type="radio" id="cube2_%i" name="cubeF2" value="%i" onclick="loadCube2(%i);"' % (i, i, i))
+                    '    <input type="radio" id="cube2_%i" name="cubeF2" value="%i" onclick="loadCube2(%i);"' % (
+                        i, i, i))
                 if i == 4:
                     f.write('checked="checked"')
                 f.write('>\n    <label for="cube2_%i">%s</label><br>\n''' % (i, cubeFiles[i]))
@@ -1723,7 +1693,8 @@ class Pydcm:
                rmse[8], maxErr[8], npts[8], rmse[9], maxErr[9], npts[9], rmse[10], maxErr[10], npts[10], rmse[11],
                maxErr[11],
                npts[11],
-               rmse[4], maxErr[4], npts[4], rmse[5], maxErr[5], npts[5], rmse[6], maxErr[6], npts[6], rmse[7], maxErr[7],
+               rmse[4], maxErr[4], npts[4], rmse[5], maxErr[5], npts[5], rmse[6], maxErr[6], npts[6], rmse[7],
+               maxErr[7],
                npts[7],
                self.webPort, imgFile)
                     )
@@ -1779,5 +1750,3 @@ class Pydcm:
         # generate a URL and display in an iframe
         url = 'http://localhost:' + self.webPort + '/html/analyze.html'
         IPython.display.IFrame(src=url, width='1120', height='2050')
-
-
